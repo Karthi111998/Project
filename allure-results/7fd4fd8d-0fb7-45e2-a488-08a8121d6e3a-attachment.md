@@ -1,0 +1,1273 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: task.spec.js >> sampletask
+- Location: tests\task.spec.js:12:6
+
+# Error details
+
+```
+Error: locator.allTextContents: Execution context was destroyed, most likely because of a navigation
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - generic [ref=e7]:
+    - generic [ref=e9]:
+      - link "Flipkart" [ref=e10] [cursor=pointer]:
+        - /url: /
+        - img "Flipkart" [ref=e11]
+      - link "Explore Plus" [ref=e12] [cursor=pointer]:
+        - /url: /plus
+        - text: Explore Plus
+        - img [ref=e13]
+    - generic [ref=e16]:
+      - textbox "Search for products, brands and more" [ref=e18]: tshirts
+      - button [ref=e19] [cursor=pointer]:
+        - img [ref=e20]
+    - link "Login" [ref=e28] [cursor=pointer]:
+      - /url: /account/login?ret=/search%3Fq%3Dtshirts%26otracker%3Dsearch%26otracker1%3Dsearch%26marketplace%3DFLIPKART%26as-show%3Doff%26as%3Doff
+    - link "Become a Seller" [ref=e30] [cursor=pointer]:
+      - /url: https://seller.flipkart.com/sell-online/?utm_source=fkwebsite&utm_medium=websitedirect
+      - generic [ref=e31]: Become a Seller
+    - generic [ref=e33] [cursor=pointer]:
+      - generic [ref=e36]: More
+      - img [ref=e37]
+    - link "Cart" [ref=e42] [cursor=pointer]:
+      - /url: /viewcart?exploreMode=true&preference=FLIPKART
+      - img [ref=e43]
+      - generic [ref=e45]: Cart
+  - generic [ref=e49]:
+    - generic [ref=e50]:
+      - generic [ref=e51]:
+        - link "spoyl spoyl Abstract Prints, Anime Tees... Under ₹599 + Extra 15% Off" [ref=e53] [cursor=pointer]:
+          - /url: /mens-tshirts/pr?sid=clo%2Cash%2Cank%2Cedy&p%5B%5D=facets.price_range.from%3DMin&p%5B%5D=facets.price_range.to%3D599&p%5B%5D=facets.trend_markers%3D1&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InRpdGxlIjp7Im11bHRpVmFsdWVkQXR0cmlidXRlIjp7ImtleSI6InRpdGxlIiwiaW5mZXJlbmNlVHlwZSI6IlRJVExFIiwidmFsdWVzIjpbIkFic3RyYWN0IFByaW50cywgQW5pbWUgVGVlcy4uLiJdLCJ2YWx1ZVR5cGUiOiJNVUxUSV9WQUxVRUQifX0sInNlYXJjaFF1ZXJ5SW5Ccm93c2UiOnsic2luZ2xlVmFsdWVBdHRyaWJ1dGUiOnsia2V5Ijoic2VhcmNoUXVlcnlJbkJyb3dzZSIsImluZmVyZW5jZVR5cGUiOiJRVUVSWV9GQUNFVCIsInZhbHVlIjoidHNoaXJ0cyIsInZhbHVlVHlwZSI6IlNJTkdMRV9WQUxVRUQifX19fX0%3D&otracker=sp_browse_announcement_search.flipkart.com
+          - generic [ref=e55]:
+            - img "spoyl" [ref=e56]
+            - img "spoyl" [ref=e57]
+          - generic [ref=e58]:
+            - generic [ref=e59]: Abstract Prints, Anime Tees...
+            - generic [ref=e60]: Under ₹599 + Extra 15% Off
+        - generic [ref=e63]:
+          - generic [ref=e66]: Filters
+          - generic [ref=e68]:
+            - generic [ref=e69]: CATEGORIES
+            - generic [ref=e71]:
+              - img [ref=e73] [cursor=pointer]
+              - link "Clothing and Accessories" [ref=e75] [cursor=pointer]:
+                - /url: /clothing-and-accessories/pr?sid=clo&q=tshirts&otracker=categorytree
+            - generic [ref=e77]:
+              - img [ref=e79] [cursor=pointer]
+              - link "Topwear" [ref=e81] [cursor=pointer]:
+                - /url: /clothing-and-accessories/topwear/pr?sid=clo,ash&q=tshirts&otracker=categorytree
+            - generic [ref=e82]:
+              - generic [ref=e83]:
+                - img [ref=e85] [cursor=pointer]
+                - link "T-shirts" [ref=e87] [cursor=pointer]:
+                  - /url: /clothing-and-accessories/topwear/tshirts/pr?sid=clo,ash,ank&q=tshirts&otracker=categorytree
+              - generic [ref=e88]:
+                - link "Kids' T-shirts" [ref=e89] [cursor=pointer]:
+                  - /url: /clothing-and-accessories/topwear/tshirts/kids-tshirts/pr?sid=clo,ash,ank,pgi&q=tshirts&otracker=categorytree
+                - link "Couple T-shirts" [ref=e90] [cursor=pointer]:
+                  - /url: /clothing-and-accessories/topwear/tshirts/couple-tshirts/pr?sid=clo,ash,ank,jqi&q=tshirts&otracker=categorytree
+                - link "Women's T-shirts" [ref=e91] [cursor=pointer]:
+                  - /url: /clothing-and-accessories/topwear/tshirts/womens-tshirts/pr?sid=clo,ash,ank,loi&q=tshirts&otracker=categorytree
+                - link "Men's T-shirts" [ref=e92] [cursor=pointer]:
+                  - /url: /clothing-and-accessories/topwear/tshirts/mens-tshirts/pr?sid=clo,ash,ank,edy&q=tshirts&otracker=categorytree
+          - generic [ref=e94] [cursor=pointer]:
+            - generic [ref=e95]: Brand
+            - img [ref=e96]
+          - generic [ref=e99] [cursor=pointer]:
+            - generic [ref=e100]: Gender
+            - img [ref=e101]
+          - generic [ref=e104] [cursor=pointer]:
+            - generic [ref=e105]: fabric
+            - img [ref=e106]
+          - generic [ref=e109] [cursor=pointer]:
+            - generic [ref=e110]: Size
+            - img [ref=e111]
+          - generic [ref=e114] [cursor=pointer]:
+            - generic [ref=e115]: Color
+            - img [ref=e116]
+          - generic [ref=e119] [cursor=pointer]:
+            - generic [ref=e120]: Pattern
+            - img [ref=e121]
+          - generic [ref=e124] [cursor=pointer]:
+            - generic [ref=e125]: Type
+            - img [ref=e126]
+          - generic [ref=e129] [cursor=pointer]:
+            - generic [ref=e130]: Fit
+            - img [ref=e131]
+          - generic [ref=e134] [cursor=pointer]:
+            - generic [ref=e135]: Sleeve Type
+            - img [ref=e136]
+          - generic [ref=e138]:
+            - generic [ref=e140]: Price
+            - generic [ref=e151]:
+              - generic [ref=e152]: .
+              - generic [ref=e153]: .
+              - generic [ref=e154]: .
+              - generic [ref=e155]: .
+              - generic [ref=e156]: .
+              - generic [ref=e157]: .
+              - generic: .
+            - generic [ref=e158]:
+              - combobox [ref=e160]:
+                - option "Min" [selected]
+                - option "₹250"
+                - option "₹300"
+                - option "₹500"
+                - option "₹700"
+                - option "₹1000"
+              - generic [ref=e161]: to
+              - combobox [ref=e163]:
+                - option "₹250"
+                - option "₹300"
+                - option "₹500"
+                - option "₹700"
+                - option "₹1000"
+                - option "₹1000+" [selected]
+          - generic [ref=e165] [cursor=pointer]:
+            - generic [ref=e166]: Occasion
+            - img [ref=e167]
+          - generic [ref=e169]:
+            - generic [ref=e170] [cursor=pointer]:
+              - generic [ref=e171]: Customer Ratings
+              - img [ref=e172]
+            - generic [ref=e175]:
+              - generic "4★ & above" [ref=e176] [cursor=pointer]:
+                - generic [ref=e180]: 4★ & above
+              - generic "3★ & above" [ref=e181] [cursor=pointer]:
+                - generic [ref=e185]: 3★ & above
+          - generic [ref=e187] [cursor=pointer]:
+            - generic [ref=e188]: Discount
+            - img [ref=e189]
+          - generic [ref=e191]:
+            - img [ref=e196] [cursor=pointer]
+            - generic [ref=e198] [cursor=pointer]: "?"
+          - generic [ref=e203] [cursor=pointer]: Delivery in 1 day
+          - generic [ref=e204]:
+            - generic [ref=e205] [cursor=pointer]:
+              - generic [ref=e206]: Offers
+              - img [ref=e207]
+            - generic [ref=e210]:
+              - generic "Buy More, Save More" [ref=e211] [cursor=pointer]:
+                - generic [ref=e215]: Buy More, Save More
+              - generic "Special Price" [ref=e216] [cursor=pointer]:
+                - generic [ref=e220]: Special Price
+          - generic [ref=e222] [cursor=pointer]:
+            - generic [ref=e223]: New Arrivals
+            - img [ref=e224]
+          - generic [ref=e227] [cursor=pointer]:
+            - generic [ref=e228]: Availability
+            - img [ref=e229]
+      - generic [ref=e231]:
+        - generic [ref=e234]:
+          - generic [ref=e235]:
+            - generic [ref=e236]:
+              - link "Home" [ref=e237] [cursor=pointer]:
+                - /url: /
+              - img [ref=e238]
+            - generic [ref=e240]:
+              - link "Clothing and Accessories" [ref=e241] [cursor=pointer]:
+                - /url: /clothing-and-accessories/pr?sid=clo&marketplace=FLIPKART
+              - img [ref=e242]
+            - generic [ref=e244]:
+              - link "Topwear" [ref=e245] [cursor=pointer]:
+                - /url: /clothing-and-accessories/topwear/pr?sid=clo,ash&marketplace=FLIPKART
+              - img [ref=e246]
+            - link "T-shirts" [ref=e249] [cursor=pointer]:
+              - /url: /clothing-and-accessories/topwear/tshirts/pr?sid=clo,ash,ank&marketplace=FLIPKART
+          - generic [ref=e250]: Showing 1 – 40 of 22,087 results for "tshirts"
+          - generic [ref=e251]:
+            - generic [ref=e252]: Sort By
+            - generic [ref=e253]: Relevance
+            - generic [ref=e254] [cursor=pointer]: Popularity
+            - generic [ref=e255] [cursor=pointer]: Price -- Low to High
+            - generic [ref=e256] [cursor=pointer]: Price -- High to Low
+            - generic [ref=e257] [cursor=pointer]: Newest First
+        - generic [ref=e259]:
+          - generic [ref=e261]:
+            - link [ref=e262] [cursor=pointer]:
+              - /url: /tripr-solid-men-round-neck-multicolor-t-shirt/p/itm5d7dfb35a85e8?pid=TSHH7USMMGUJHGXU&lid=LSTTSHH7USMMGUJHGXUDSSHXG&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_1&otracker=search&otracker1=search&fm=organic&iid=en_cLm-CX3lNis3L5T7ckRoO8tToN8hpPTf7ZRH-X9GRR2Go676K_GhuP0bhLV5NZaVSxijG-NZBmsKaDzMrr7EhE4IsYyWu-Pj9cxFjFAoaLk%3D&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - img [ref=e269]
+            - generic [ref=e271]:
+              - img [ref=e273]
+              - generic [ref=e276]: TRIPR
+              - link "Pack of 4 Men Solid Round Neck Cotton Blend Multicolor ..." [ref=e277] [cursor=pointer]:
+                - /url: /tripr-solid-men-round-neck-multicolor-t-shirt/p/itm5d7dfb35a85e8?pid=TSHH7USMMGUJHGXU&lid=LSTTSHH7USMMGUJHGXUDSSHXG&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_1&otracker=search&otracker1=search&fm=organic&iid=en_cLm-CX3lNis3L5T7ckRoO8tToN8hpPTf7ZRH-X9GRR2Go676K_GhuP0bhLV5NZaVSxijG-NZBmsKaDzMrr7EhE4IsYyWu-Pj9cxFjFAoaLk%3D&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - img [ref=e279]
+              - link "₹445 ₹1,999 77% off" [ref=e280] [cursor=pointer]:
+                - /url: /tripr-solid-men-round-neck-multicolor-t-shirt/p/itm5d7dfb35a85e8?pid=TSHH7USMMGUJHGXU&lid=LSTTSHH7USMMGUJHGXUDSSHXG&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_1&otracker=search&otracker1=search&fm=organic&iid=en_cLm-CX3lNis3L5T7ckRoO8tToN8hpPTf7ZRH-X9GRR2Go676K_GhuP0bhLV5NZaVSxijG-NZBmsKaDzMrr7EhE4IsYyWu-Pj9cxFjFAoaLk%3D&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+                - generic [ref=e281]:
+                  - generic [ref=e282]: ₹445
+                  - generic [ref=e283]: ₹1,999
+                  - generic [ref=e284]: 77% off
+              - generic [ref=e287]: Early Bird Deal
+          - generic [ref=e289]:
+            - link [ref=e290] [cursor=pointer]:
+              - /url: /force-printed-men-round-neck-black-t-shirt/p/itm95a7aee630c49?pid=TSHH3ZNYSRYGYQWD&lid=LSTTSHH3ZNYSRYGYQWDUVPOMP&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_2&otracker=search&otracker1=search&fm=organic&iid=en_cLm-CX3lNis3L5T7ckRoO8tToN8hpPTf7ZRH-X9GRR3ifBi2kBigCpj0IeqgKksCtT3QtoN-TFKoTAzRvj6lfw%3D%3D&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - img [ref=e297]
+            - generic [ref=e299]:
+              - img [ref=e301]
+              - generic [ref=e304]: Force
+              - link "Men Printed Round Neck Cotton Blend Black T-Shirt" [ref=e305] [cursor=pointer]:
+                - /url: /force-printed-men-round-neck-black-t-shirt/p/itm95a7aee630c49?pid=TSHH3ZNYSRYGYQWD&lid=LSTTSHH3ZNYSRYGYQWDUVPOMP&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_2&otracker=search&otracker1=search&fm=organic&iid=en_cLm-CX3lNis3L5T7ckRoO8tToN8hpPTf7ZRH-X9GRR3ifBi2kBigCpj0IeqgKksCtT3QtoN-TFKoTAzRvj6lfw%3D%3D&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - link "₹228 ₹1,999 88% off" [ref=e306] [cursor=pointer]:
+                - /url: /force-printed-men-round-neck-black-t-shirt/p/itm95a7aee630c49?pid=TSHH3ZNYSRYGYQWD&lid=LSTTSHH3ZNYSRYGYQWDUVPOMP&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_2&otracker=search&otracker1=search&fm=organic&iid=en_cLm-CX3lNis3L5T7ckRoO8tToN8hpPTf7ZRH-X9GRR3ifBi2kBigCpj0IeqgKksCtT3QtoN-TFKoTAzRvj6lfw%3D%3D&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+                - generic [ref=e307]:
+                  - generic [ref=e308]: ₹228
+                  - generic [ref=e309]: ₹1,999
+                  - generic [ref=e310]: 88% off
+              - generic [ref=e313]: Early Bird Deal
+          - generic [ref=e315]:
+            - link [ref=e316] [cursor=pointer]:
+              - /url: /zeffit-printed-men-round-neck-black-blue-red-t-shirt/p/itm8950fa82e335e?pid=TSHGRHSEVPZWBHJF&lid=LSTTSHGRHSEVPZWBHJFF5EOCD&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_3&otracker=search&otracker1=search&fm=organic&iid=9f358a32-441e-4ad4-bce1-c9fa8048a83d.TSHGRHSEVPZWBHJF.SEARCH&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - img [ref=e323]
+            - generic [ref=e325]:
+              - generic [ref=e326]: Zeffit
+              - link "Pack of 3 Men Printed Round Neck Cotton Blend Black, Bl..." [ref=e327] [cursor=pointer]:
+                - /url: /zeffit-printed-men-round-neck-black-blue-red-t-shirt/p/itm8950fa82e335e?pid=TSHGRHSEVPZWBHJF&lid=LSTTSHGRHSEVPZWBHJFF5EOCD&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_3&otracker=search&otracker1=search&fm=organic&iid=9f358a32-441e-4ad4-bce1-c9fa8048a83d.TSHGRHSEVPZWBHJF.SEARCH&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - img [ref=e329]
+              - link "₹445 ₹2,699 83% off" [ref=e330] [cursor=pointer]:
+                - /url: /zeffit-printed-men-round-neck-black-blue-red-t-shirt/p/itm8950fa82e335e?pid=TSHGRHSEVPZWBHJF&lid=LSTTSHGRHSEVPZWBHJFF5EOCD&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_3&otracker=search&otracker1=search&fm=organic&iid=9f358a32-441e-4ad4-bce1-c9fa8048a83d.TSHGRHSEVPZWBHJF.SEARCH&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+                - generic [ref=e331]:
+                  - generic [ref=e332]: ₹445
+                  - generic [ref=e333]: ₹2,699
+                  - generic [ref=e334]: 83% off
+              - generic [ref=e337]: Early Bird Deal
+          - generic [ref=e339]:
+            - link [ref=e340] [cursor=pointer]:
+              - /url: /stelino-self-design-men-round-neck-multicolor-t-shirt/p/itm99a196ee8dc88?pid=TSHHNJJ37HBQZHGH&lid=LSTTSHHNJJ37HBQZHGHU5LGTY&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_4&otracker=search&otracker1=search&fm=organic&iid=9f358a32-441e-4ad4-bce1-c9fa8048a83d.TSHHNJJ37HBQZHGH.SEARCH&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - img [ref=e347]
+            - generic [ref=e349]:
+              - generic [ref=e350]: Stelino
+              - link "Men Self Design Round Neck Cotton Blend Multicolor T-Sh..." [ref=e351] [cursor=pointer]:
+                - /url: /stelino-self-design-men-round-neck-multicolor-t-shirt/p/itm99a196ee8dc88?pid=TSHHNJJ37HBQZHGH&lid=LSTTSHHNJJ37HBQZHGHU5LGTY&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_4&otracker=search&otracker1=search&fm=organic&iid=9f358a32-441e-4ad4-bce1-c9fa8048a83d.TSHHNJJ37HBQZHGH.SEARCH&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - link "₹207 ₹999 79% off" [ref=e352] [cursor=pointer]:
+                - /url: /stelino-self-design-men-round-neck-multicolor-t-shirt/p/itm99a196ee8dc88?pid=TSHHNJJ37HBQZHGH&lid=LSTTSHHNJJ37HBQZHGHU5LGTY&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_4&otracker=search&otracker1=search&fm=organic&iid=9f358a32-441e-4ad4-bce1-c9fa8048a83d.TSHHNJJ37HBQZHGH.SEARCH&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+                - generic [ref=e353]:
+                  - generic [ref=e354]: ₹207
+                  - generic [ref=e355]: ₹999
+                  - generic [ref=e356]: 79% off
+              - generic [ref=e359]: Only few left
+        - generic [ref=e361]:
+          - generic [ref=e363]:
+            - link [ref=e364] [cursor=pointer]:
+              - /url: /blive-solid-men-round-neck-black-dark-green-navy-blue-t-shirt/p/itm21f7967c0d9e3?pid=TSHHGYMBADB4XN8E&lid=LSTTSHHGYMBADB4XN8ETRPKZM&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_5&otracker=search&otracker1=search&fm=organic&iid=en_cLm-CX3lNis3L5T7ckRoO8tToN8hpPTf7ZRH-X9GRR0TP8EsGAIwXa1gabQbwqMT75U06f-TIvvcc3H7lXOi1zRKtQQVWB8eNWYNLe7VuyQ%3D&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - img [ref=e371]
+            - generic [ref=e373]:
+              - img [ref=e375]
+              - generic [ref=e378]: BLIVE
+              - link "Pack of 3 Men Solid Round Neck Cotton Blend Black, Dark..." [ref=e379] [cursor=pointer]:
+                - /url: /blive-solid-men-round-neck-black-dark-green-navy-blue-t-shirt/p/itm21f7967c0d9e3?pid=TSHHGYMBADB4XN8E&lid=LSTTSHHGYMBADB4XN8ETRPKZM&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_5&otracker=search&otracker1=search&fm=organic&iid=en_cLm-CX3lNis3L5T7ckRoO8tToN8hpPTf7ZRH-X9GRR0TP8EsGAIwXa1gabQbwqMT75U06f-TIvvcc3H7lXOi1zRKtQQVWB8eNWYNLe7VuyQ%3D&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - link "₹438 ₹1,999 78% off" [ref=e380] [cursor=pointer]:
+                - /url: /blive-solid-men-round-neck-black-dark-green-navy-blue-t-shirt/p/itm21f7967c0d9e3?pid=TSHHGYMBADB4XN8E&lid=LSTTSHHGYMBADB4XN8ETRPKZM&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_5&otracker=search&otracker1=search&fm=organic&iid=en_cLm-CX3lNis3L5T7ckRoO8tToN8hpPTf7ZRH-X9GRR0TP8EsGAIwXa1gabQbwqMT75U06f-TIvvcc3H7lXOi1zRKtQQVWB8eNWYNLe7VuyQ%3D&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+                - generic [ref=e381]:
+                  - generic [ref=e382]: ₹438
+                  - generic [ref=e383]: ₹1,999
+                  - generic [ref=e384]: 78% off
+              - generic [ref=e387]: Lowest price since launch
+          - generic [ref=e389]:
+            - link [ref=e390] [cursor=pointer]:
+              - /url: /kajaru-self-design-men-zip-neck-pink-t-shirt/p/itm0e28deecca2bc?pid=TSHH8QYHDG2DKSRG&lid=LSTTSHH8QYHDG2DKSRG0BNWCH&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_6&otracker=search&otracker1=search&fm=organic&iid=en_cLm-CX3lNis3L5T7ckRoO8tToN8hpPTf7ZRH-X9GRR2HqWDBAfmHHt5EcxW0KerYI2PX8_NLxw-zhwvM5inuJfUFjCTyOHoHZs-Z5_PS_w0%3D&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - img [ref=e397]
+            - generic [ref=e399]:
+              - img [ref=e401]
+              - generic [ref=e404]: KAJARU
+              - link "Men Self Design Zip Neck Polyester Pink T-Shirt" [ref=e405] [cursor=pointer]:
+                - /url: /kajaru-self-design-men-zip-neck-pink-t-shirt/p/itm0e28deecca2bc?pid=TSHH8QYHDG2DKSRG&lid=LSTTSHH8QYHDG2DKSRG0BNWCH&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_6&otracker=search&otracker1=search&fm=organic&iid=en_cLm-CX3lNis3L5T7ckRoO8tToN8hpPTf7ZRH-X9GRR2HqWDBAfmHHt5EcxW0KerYI2PX8_NLxw-zhwvM5inuJfUFjCTyOHoHZs-Z5_PS_w0%3D&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - img [ref=e407]
+              - link "₹260 ₹999 73% off" [ref=e408] [cursor=pointer]:
+                - /url: /kajaru-self-design-men-zip-neck-pink-t-shirt/p/itm0e28deecca2bc?pid=TSHH8QYHDG2DKSRG&lid=LSTTSHH8QYHDG2DKSRG0BNWCH&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_6&otracker=search&otracker1=search&fm=organic&iid=en_cLm-CX3lNis3L5T7ckRoO8tToN8hpPTf7ZRH-X9GRR2HqWDBAfmHHt5EcxW0KerYI2PX8_NLxw-zhwvM5inuJfUFjCTyOHoHZs-Z5_PS_w0%3D&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+                - generic [ref=e409]:
+                  - generic [ref=e410]: ₹260
+                  - generic [ref=e411]: ₹999
+                  - generic [ref=e412]: 73% off
+              - generic [ref=e415]: Early Bird Deal
+          - generic [ref=e417]:
+            - link [ref=e418] [cursor=pointer]:
+              - /url: /combraided-self-design-men-round-neck-black-brown-t-shirt/p/itm19b4b93fe508e?pid=TSHHNHRZZZMGA8TV&lid=LSTTSHHNHRZZZMGA8TVFPON5K&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_7&otracker=search&otracker1=search&fm=organic&iid=9f358a32-441e-4ad4-bce1-c9fa8048a83d.TSHHNHRZZZMGA8TV.SEARCH&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - img [ref=e425]
+            - generic [ref=e427]:
+              - generic [ref=e428]: COMBRAIDED
+              - link "Pack of 2 Men Self Design Round Neck Polycotton Black, ..." [ref=e429] [cursor=pointer]:
+                - /url: /combraided-self-design-men-round-neck-black-brown-t-shirt/p/itm19b4b93fe508e?pid=TSHHNHRZZZMGA8TV&lid=LSTTSHHNHRZZZMGA8TVFPON5K&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_7&otracker=search&otracker1=search&fm=organic&iid=9f358a32-441e-4ad4-bce1-c9fa8048a83d.TSHHNHRZZZMGA8TV.SEARCH&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - link "₹448 ₹1,499 70% off" [ref=e430] [cursor=pointer]:
+                - /url: /combraided-self-design-men-round-neck-black-brown-t-shirt/p/itm19b4b93fe508e?pid=TSHHNHRZZZMGA8TV&lid=LSTTSHHNHRZZZMGA8TVFPON5K&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_7&otracker=search&otracker1=search&fm=organic&iid=9f358a32-441e-4ad4-bce1-c9fa8048a83d.TSHHNHRZZZMGA8TV.SEARCH&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+                - generic [ref=e431]:
+                  - generic [ref=e432]: ₹448
+                  - generic [ref=e433]: ₹1,499
+                  - generic [ref=e434]: 70% off
+              - generic [ref=e437]: Only few left
+          - generic [ref=e439]:
+            - link [ref=e440] [cursor=pointer]:
+              - /url: /kajaru-printed-men-round-neck-dark-green-t-shirt/p/itmabe126deee25c?pid=TSHHNGYWWWQSYKTF&lid=LSTTSHHNGYWWWQSYKTFEIFEZL&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_8&otracker=search&otracker1=search&fm=organic&iid=9f358a32-441e-4ad4-bce1-c9fa8048a83d.TSHHNGYWWWQSYKTF.SEARCH&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - img [ref=e447]
+            - generic [ref=e449]:
+              - generic [ref=e450]: KAJARU
+              - link "Men Printed Round Neck Polyester Dark Green T-Shirt" [ref=e451] [cursor=pointer]:
+                - /url: /kajaru-printed-men-round-neck-dark-green-t-shirt/p/itmabe126deee25c?pid=TSHHNGYWWWQSYKTF&lid=LSTTSHHNGYWWWQSYKTFEIFEZL&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_8&otracker=search&otracker1=search&fm=organic&iid=9f358a32-441e-4ad4-bce1-c9fa8048a83d.TSHHNGYWWWQSYKTF.SEARCH&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - link "₹268 ₹999 73% off" [ref=e452] [cursor=pointer]:
+                - /url: /kajaru-printed-men-round-neck-dark-green-t-shirt/p/itmabe126deee25c?pid=TSHHNGYWWWQSYKTF&lid=LSTTSHHNGYWWWQSYKTFEIFEZL&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_8&otracker=search&otracker1=search&fm=organic&iid=9f358a32-441e-4ad4-bce1-c9fa8048a83d.TSHHNGYWWWQSYKTF.SEARCH&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+                - generic [ref=e453]:
+                  - generic [ref=e454]: ₹268
+                  - generic [ref=e455]: ₹999
+                  - generic [ref=e456]: 73% off
+              - generic [ref=e459]: Only few left
+        - generic [ref=e461]:
+          - generic [ref=e463]:
+            - link [ref=e464] [cursor=pointer]:
+              - /url: /roadster-solid-men-round-neck-white-t-shirt/p/itmf1ab4114ce3ae?pid=TSHFYUPZAYYH7RQX&lid=LSTTSHFYUPZAYYH7RQXM8T0GF&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_9&otracker=search&otracker1=search&fm=organic&iid=9f358a32-441e-4ad4-bce1-c9fa8048a83d.TSHFYUPZAYYH7RQX.SEARCH&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - img [ref=e471]
+            - generic [ref=e473]:
+              - generic [ref=e474]: Roadster
+              - link "Men Solid Round Neck Pure Cotton White T-Shirt" [ref=e475] [cursor=pointer]:
+                - /url: /roadster-solid-men-round-neck-white-t-shirt/p/itmf1ab4114ce3ae?pid=TSHFYUPZAYYH7RQX&lid=LSTTSHFYUPZAYYH7RQXM8T0GF&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_9&otracker=search&otracker1=search&fm=organic&iid=9f358a32-441e-4ad4-bce1-c9fa8048a83d.TSHFYUPZAYYH7RQX.SEARCH&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - link "₹166 ₹599 72% off" [ref=e476] [cursor=pointer]:
+                - /url: /roadster-solid-men-round-neck-white-t-shirt/p/itmf1ab4114ce3ae?pid=TSHFYUPZAYYH7RQX&lid=LSTTSHFYUPZAYYH7RQXM8T0GF&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_9&otracker=search&otracker1=search&fm=organic&iid=9f358a32-441e-4ad4-bce1-c9fa8048a83d.TSHFYUPZAYYH7RQX.SEARCH&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+                - generic [ref=e477]:
+                  - generic [ref=e478]: ₹166
+                  - generic [ref=e479]: ₹599
+                  - generic [ref=e480]: 72% off
+              - generic [ref=e483]: Early Bird Deal
+          - generic [ref=e485]:
+            - link [ref=e486] [cursor=pointer]:
+              - /url: /3bros-solid-men-polo-neck-pink-t-shirt/p/itm4bc6f27702fcf?pid=TSHH2GBAGPUBHEMS&lid=LSTTSHH2GBAGPUBHEMSMD0ZPA&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_10&otracker=search&otracker1=search&fm=organic&iid=9f358a32-441e-4ad4-bce1-c9fa8048a83d.TSHH2GBAGPUBHEMS.SEARCH&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - img [ref=e493]
+            - generic [ref=e495]:
+              - generic [ref=e496]: 3BROS
+              - link "Men Solid Polo Neck Cotton Blend Pink T-Shirt" [ref=e497] [cursor=pointer]:
+                - /url: /3bros-solid-men-polo-neck-pink-t-shirt/p/itm4bc6f27702fcf?pid=TSHH2GBAGPUBHEMS&lid=LSTTSHH2GBAGPUBHEMSMD0ZPA&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_10&otracker=search&otracker1=search&fm=organic&iid=9f358a32-441e-4ad4-bce1-c9fa8048a83d.TSHH2GBAGPUBHEMS.SEARCH&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - img [ref=e499]
+              - link "₹295 ₹999 70% off" [ref=e500] [cursor=pointer]:
+                - /url: /3bros-solid-men-polo-neck-pink-t-shirt/p/itm4bc6f27702fcf?pid=TSHH2GBAGPUBHEMS&lid=LSTTSHH2GBAGPUBHEMSMD0ZPA&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_10&otracker=search&otracker1=search&fm=organic&iid=9f358a32-441e-4ad4-bce1-c9fa8048a83d.TSHH2GBAGPUBHEMS.SEARCH&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+                - generic [ref=e501]:
+                  - generic [ref=e502]: ₹295
+                  - generic [ref=e503]: ₹999
+                  - generic [ref=e504]: 70% off
+              - generic [ref=e507]: Early Bird Deal
+          - generic [ref=e509]:
+            - link [ref=e510] [cursor=pointer]:
+              - /url: /tripr-solid-men-round-neck-multicolor-t-shirt/p/itme8bf8b2514c49?pid=TSHH8CNZEFH8HNSM&lid=LSTTSHH8CNZEFH8HNSMACIWBH&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_11&otracker=search&otracker1=search&fm=organic&iid=en_cLm-CX3lNis3L5T7ckRoO8tToN8hpPTf7ZRH-X9GRR2YUMeSfaorwHFc9Ns245rqv0RwFoSROMEB8ixynPyELQ1kFuKnWaINrJqv3pKVKuU%3D&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - img [ref=e517]
+            - generic [ref=e519]:
+              - img [ref=e521]
+              - generic [ref=e524]: TRIPR
+              - link "Pack of 2 Men Solid Round Neck Cotton Blend Multicolor ..." [ref=e525] [cursor=pointer]:
+                - /url: /tripr-solid-men-round-neck-multicolor-t-shirt/p/itme8bf8b2514c49?pid=TSHH8CNZEFH8HNSM&lid=LSTTSHH8CNZEFH8HNSMACIWBH&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_11&otracker=search&otracker1=search&fm=organic&iid=en_cLm-CX3lNis3L5T7ckRoO8tToN8hpPTf7ZRH-X9GRR2YUMeSfaorwHFc9Ns245rqv0RwFoSROMEB8ixynPyELQ1kFuKnWaINrJqv3pKVKuU%3D&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - link "₹321 ₹1,499 78% off" [ref=e526] [cursor=pointer]:
+                - /url: /tripr-solid-men-round-neck-multicolor-t-shirt/p/itme8bf8b2514c49?pid=TSHH8CNZEFH8HNSM&lid=LSTTSHH8CNZEFH8HNSMACIWBH&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_11&otracker=search&otracker1=search&fm=organic&iid=en_cLm-CX3lNis3L5T7ckRoO8tToN8hpPTf7ZRH-X9GRR2YUMeSfaorwHFc9Ns245rqv0RwFoSROMEB8ixynPyELQ1kFuKnWaINrJqv3pKVKuU%3D&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+                - generic [ref=e527]:
+                  - generic [ref=e528]: ₹321
+                  - generic [ref=e529]: ₹1,499
+                  - generic [ref=e530]: 78% off
+          - generic [ref=e532]:
+            - link [ref=e533] [cursor=pointer]:
+              - /url: /kajaru-self-design-men-polo-neck-dark-green-black-t-shirt/p/itm9f8b222bb0a17?pid=TSHHEZZ3NZWP7WWQ&lid=LSTTSHHEZZ3NZWP7WWQJJFPCM&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_12&otracker=search&otracker1=search&fm=organic&iid=en_cLm-CX3lNis3L5T7ckRoO8tToN8hpPTf7ZRH-X9GRR05X2niylukTY6TGfoQqWctojh4pR0ZSEA0kPXxR5hI7fUFjCTyOHoHZs-Z5_PS_w0%3D&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - img [ref=e540]
+            - generic [ref=e542]:
+              - img [ref=e544]
+              - generic [ref=e547]: KAJARU
+              - link "Pack of 2 Men Self Design Polo Neck Polyester Dark Gree..." [ref=e548] [cursor=pointer]:
+                - /url: /kajaru-self-design-men-polo-neck-dark-green-black-t-shirt/p/itm9f8b222bb0a17?pid=TSHHEZZ3NZWP7WWQ&lid=LSTTSHHEZZ3NZWP7WWQJJFPCM&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_12&otracker=search&otracker1=search&fm=organic&iid=en_cLm-CX3lNis3L5T7ckRoO8tToN8hpPTf7ZRH-X9GRR05X2niylukTY6TGfoQqWctojh4pR0ZSEA0kPXxR5hI7fUFjCTyOHoHZs-Z5_PS_w0%3D&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - img [ref=e550]
+              - link "₹445 ₹1,299 65% off" [ref=e551] [cursor=pointer]:
+                - /url: /kajaru-self-design-men-polo-neck-dark-green-black-t-shirt/p/itm9f8b222bb0a17?pid=TSHHEZZ3NZWP7WWQ&lid=LSTTSHHEZZ3NZWP7WWQJJFPCM&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_12&otracker=search&otracker1=search&fm=organic&iid=en_cLm-CX3lNis3L5T7ckRoO8tToN8hpPTf7ZRH-X9GRR05X2niylukTY6TGfoQqWctojh4pR0ZSEA0kPXxR5hI7fUFjCTyOHoHZs-Z5_PS_w0%3D&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+                - generic [ref=e552]:
+                  - generic [ref=e553]: ₹445
+                  - generic [ref=e554]: ₹1,299
+                  - generic [ref=e555]: 65% off
+        - generic [ref=e557]:
+          - generic [ref=e559]:
+            - link [ref=e560] [cursor=pointer]:
+              - /url: /allen-solly-colorblock-men-polo-neck-multicolor-t-shirt/p/itm57c81771c7734?pid=TSHGW7WWZEV2DMSW&lid=LSTTSHGW7WWZEV2DMSWVUYGGS&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&spotlightTagId=default_BestsellerId_clo%2Fash%2Fank&srno=s_1_13&otracker=search&otracker1=search&fm=organic&iid=9f358a32-441e-4ad4-bce1-c9fa8048a83d.TSHGW7WWZEV2DMSW.SEARCH&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - img [ref=e567]
+            - generic [ref=e569]:
+              - generic [ref=e570]: Allen Solly
+              - link "Men Colorblock Polo Neck Cotton Blend Multicolor T-Shir..." [ref=e571] [cursor=pointer]:
+                - /url: /allen-solly-colorblock-men-polo-neck-multicolor-t-shirt/p/itm57c81771c7734?pid=TSHGW7WWZEV2DMSW&lid=LSTTSHGW7WWZEV2DMSWVUYGGS&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&spotlightTagId=default_BestsellerId_clo%2Fash%2Fank&srno=s_1_13&otracker=search&otracker1=search&fm=organic&iid=9f358a32-441e-4ad4-bce1-c9fa8048a83d.TSHGW7WWZEV2DMSW.SEARCH&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - img [ref=e573]
+              - link "₹431 ₹1,199 64% off" [ref=e574] [cursor=pointer]:
+                - /url: /allen-solly-colorblock-men-polo-neck-multicolor-t-shirt/p/itm57c81771c7734?pid=TSHGW7WWZEV2DMSW&lid=LSTTSHGW7WWZEV2DMSWVUYGGS&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&spotlightTagId=default_BestsellerId_clo%2Fash%2Fank&srno=s_1_13&otracker=search&otracker1=search&fm=organic&iid=9f358a32-441e-4ad4-bce1-c9fa8048a83d.TSHGW7WWZEV2DMSW.SEARCH&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+                - generic [ref=e575]:
+                  - generic [ref=e576]: ₹431
+                  - generic [ref=e577]: ₹1,199
+                  - generic [ref=e578]: 64% off
+              - generic [ref=e581]: Early Bird Deal
+          - generic [ref=e583]:
+            - link [ref=e584] [cursor=pointer]:
+              - /url: /stelino-self-design-men-round-neck-maroon-t-shirt/p/itm8766e1e663c15?pid=TSHHNJGYD7GBPVVM&lid=LSTTSHHNJGYD7GBPVVMTBF1TU&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_14&otracker=search&otracker1=search&fm=organic&iid=9f358a32-441e-4ad4-bce1-c9fa8048a83d.TSHHNJGYD7GBPVVM.SEARCH&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - img [ref=e591]
+            - generic [ref=e593]:
+              - generic [ref=e594]: Stelino
+              - link "Men Self Design Round Neck Cotton Blend Maroon T-Shirt" [ref=e595] [cursor=pointer]:
+                - /url: /stelino-self-design-men-round-neck-maroon-t-shirt/p/itm8766e1e663c15?pid=TSHHNJGYD7GBPVVM&lid=LSTTSHHNJGYD7GBPVVMTBF1TU&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_14&otracker=search&otracker1=search&fm=organic&iid=9f358a32-441e-4ad4-bce1-c9fa8048a83d.TSHHNJGYD7GBPVVM.SEARCH&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - link "₹207 ₹999 79% off" [ref=e596] [cursor=pointer]:
+                - /url: /stelino-self-design-men-round-neck-maroon-t-shirt/p/itm8766e1e663c15?pid=TSHHNJGYD7GBPVVM&lid=LSTTSHHNJGYD7GBPVVMTBF1TU&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_14&otracker=search&otracker1=search&fm=organic&iid=9f358a32-441e-4ad4-bce1-c9fa8048a83d.TSHHNJGYD7GBPVVM.SEARCH&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+                - generic [ref=e597]:
+                  - generic [ref=e598]: ₹207
+                  - generic [ref=e599]: ₹999
+                  - generic [ref=e600]: 79% off
+              - generic [ref=e603]: Only few left
+          - generic [ref=e605]:
+            - link [ref=e606] [cursor=pointer]:
+              - /url: /vebnor-solid-men-polo-neck-light-green-t-shirt/p/itm6c424fc2ea12a?pid=TSHGRS65NWEWFUBX&lid=LSTTSHGRS65NWEWFUBX53EVLV&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_15&otracker=search&otracker1=search&fm=organic&iid=9f358a32-441e-4ad4-bce1-c9fa8048a83d.TSHGRS65NWEWFUBX.SEARCH&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - img [ref=e613]
+            - generic [ref=e615]:
+              - generic [ref=e616]: VeBNoR
+              - link "Men Solid Polo Neck Polyester Light Green T-Shirt" [ref=e617] [cursor=pointer]:
+                - /url: /vebnor-solid-men-polo-neck-light-green-t-shirt/p/itm6c424fc2ea12a?pid=TSHGRS65NWEWFUBX&lid=LSTTSHGRS65NWEWFUBX53EVLV&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_15&otracker=search&otracker1=search&fm=organic&iid=9f358a32-441e-4ad4-bce1-c9fa8048a83d.TSHGRS65NWEWFUBX.SEARCH&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - img [ref=e619]
+              - link "₹242 ₹999 75% off" [ref=e620] [cursor=pointer]:
+                - /url: /vebnor-solid-men-polo-neck-light-green-t-shirt/p/itm6c424fc2ea12a?pid=TSHGRS65NWEWFUBX&lid=LSTTSHGRS65NWEWFUBX53EVLV&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_15&otracker=search&otracker1=search&fm=organic&iid=9f358a32-441e-4ad4-bce1-c9fa8048a83d.TSHGRS65NWEWFUBX.SEARCH&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+                - generic [ref=e621]:
+                  - generic [ref=e622]: ₹242
+                  - generic [ref=e623]: ₹999
+                  - generic [ref=e624]: 75% off
+              - generic [ref=e627]: Early Bird Deal
+          - generic [ref=e629]:
+            - link [ref=e630] [cursor=pointer]:
+              - /url: /technosport-solid-men-round-neck-black-t-shirt/p/itm3151e250fc008?pid=TSHGNBPYQBVQ3GME&lid=LSTTSHGNBPYQBVQ3GMEJZWNCT&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_16&otracker=search&otracker1=search&fm=organic&iid=9f358a32-441e-4ad4-bce1-c9fa8048a83d.TSHGNBPYQBVQ3GME.SEARCH&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - img [ref=e637]
+            - generic [ref=e639]:
+              - generic [ref=e640]: TECHNOSPORT
+              - link "Men Solid Round Neck Polyester Black T-Shirt" [ref=e641] [cursor=pointer]:
+                - /url: /technosport-solid-men-round-neck-black-t-shirt/p/itm3151e250fc008?pid=TSHGNBPYQBVQ3GME&lid=LSTTSHGNBPYQBVQ3GMEJZWNCT&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_16&otracker=search&otracker1=search&fm=organic&iid=9f358a32-441e-4ad4-bce1-c9fa8048a83d.TSHGNBPYQBVQ3GME.SEARCH&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - img [ref=e643]
+              - link "₹223 ₹319 30% off" [ref=e644] [cursor=pointer]:
+                - /url: /technosport-solid-men-round-neck-black-t-shirt/p/itm3151e250fc008?pid=TSHGNBPYQBVQ3GME&lid=LSTTSHGNBPYQBVQ3GMEJZWNCT&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_16&otracker=search&otracker1=search&fm=organic&iid=9f358a32-441e-4ad4-bce1-c9fa8048a83d.TSHGNBPYQBVQ3GME.SEARCH&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+                - generic [ref=e645]:
+                  - generic [ref=e646]: ₹223
+                  - generic [ref=e647]: ₹319
+                  - generic [ref=e648]: 30% off
+              - generic [ref=e651]: Early Bird Deal
+        - generic [ref=e653]:
+          - generic [ref=e655]:
+            - link [ref=e656] [cursor=pointer]:
+              - /url: /tripr-solid-men-round-neck-multicolor-t-shirt/p/itmbdcd52a2172b8?pid=TSHH7USMHRWUFPGM&lid=LSTTSHH7USMHRWUFPGMCMVSFR&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_17&otracker=search&otracker1=search&fm=organic&iid=en_cLm-CX3lNis3L5T7ckRoO8tToN8hpPTf7ZRH-X9GRR18ZCMFoezr6AEBDun6Imr_mZkOJzhQjfvWXOoQyCdCXR7zrT4gkWAkPCdPBnPCejA%3D&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - img [ref=e663]
+            - generic [ref=e665]:
+              - img [ref=e667]
+              - generic [ref=e670]: TRIPR
+              - link "Pack of 4 Men Solid Round Neck Cotton Blend Multicolor ..." [ref=e671] [cursor=pointer]:
+                - /url: /tripr-solid-men-round-neck-multicolor-t-shirt/p/itmbdcd52a2172b8?pid=TSHH7USMHRWUFPGM&lid=LSTTSHH7USMHRWUFPGMCMVSFR&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_17&otracker=search&otracker1=search&fm=organic&iid=en_cLm-CX3lNis3L5T7ckRoO8tToN8hpPTf7ZRH-X9GRR18ZCMFoezr6AEBDun6Imr_mZkOJzhQjfvWXOoQyCdCXR7zrT4gkWAkPCdPBnPCejA%3D&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - img [ref=e673]
+              - link "₹444 ₹1,999 77% off" [ref=e674] [cursor=pointer]:
+                - /url: /tripr-solid-men-round-neck-multicolor-t-shirt/p/itmbdcd52a2172b8?pid=TSHH7USMHRWUFPGM&lid=LSTTSHH7USMHRWUFPGMCMVSFR&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_17&otracker=search&otracker1=search&fm=organic&iid=en_cLm-CX3lNis3L5T7ckRoO8tToN8hpPTf7ZRH-X9GRR18ZCMFoezr6AEBDun6Imr_mZkOJzhQjfvWXOoQyCdCXR7zrT4gkWAkPCdPBnPCejA%3D&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+                - generic [ref=e675]:
+                  - generic [ref=e676]: ₹444
+                  - generic [ref=e677]: ₹1,999
+                  - generic [ref=e678]: 77% off
+              - generic [ref=e681]: Early Bird Deal
+          - generic [ref=e683]:
+            - link [ref=e684] [cursor=pointer]:
+              - /url: /tripr-solid-men-round-neck-multicolor-t-shirt/p/itmb61333e7f6e9c?pid=TSHHGFG2ERE2MQN5&lid=LSTTSHHGFG2ERE2MQN54DHH18&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_18&otracker=search&otracker1=search&fm=organic&iid=en_cLm-CX3lNis3L5T7ckRoO8tToN8hpPTf7ZRH-X9GRR2Umb4z6tGG3cfhMLgNKMEE1yPk1ilfF-_kJxr5dKMIWDaXAI15xQIPam6Hsx54Dy4%3D&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - img [ref=e691]
+            - generic [ref=e693]:
+              - img [ref=e695]
+              - generic [ref=e698]: TRIPR
+              - link "Pack of 4 Men Solid Round Neck Cotton Blend Multicolor ..." [ref=e699] [cursor=pointer]:
+                - /url: /tripr-solid-men-round-neck-multicolor-t-shirt/p/itmb61333e7f6e9c?pid=TSHHGFG2ERE2MQN5&lid=LSTTSHHGFG2ERE2MQN54DHH18&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_18&otracker=search&otracker1=search&fm=organic&iid=en_cLm-CX3lNis3L5T7ckRoO8tToN8hpPTf7ZRH-X9GRR2Umb4z6tGG3cfhMLgNKMEE1yPk1ilfF-_kJxr5dKMIWDaXAI15xQIPam6Hsx54Dy4%3D&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - img [ref=e701]
+              - link "₹438 ₹1,999 78% off" [ref=e702] [cursor=pointer]:
+                - /url: /tripr-solid-men-round-neck-multicolor-t-shirt/p/itmb61333e7f6e9c?pid=TSHHGFG2ERE2MQN5&lid=LSTTSHHGFG2ERE2MQN54DHH18&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_18&otracker=search&otracker1=search&fm=organic&iid=en_cLm-CX3lNis3L5T7ckRoO8tToN8hpPTf7ZRH-X9GRR2Umb4z6tGG3cfhMLgNKMEE1yPk1ilfF-_kJxr5dKMIWDaXAI15xQIPam6Hsx54Dy4%3D&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+                - generic [ref=e703]:
+                  - generic [ref=e704]: ₹438
+                  - generic [ref=e705]: ₹1,999
+                  - generic [ref=e706]: 78% off
+              - generic [ref=e709]: Lowest price since launch
+          - generic [ref=e711]:
+            - link [ref=e712] [cursor=pointer]:
+              - /url: /vebnor-solid-men-polo-neck-beige-t-shirt/p/itm3dbb8e1358ae1?pid=TSHHHAA9PKGHWYBE&lid=LSTTSHHHAA9PKGHWYBEPY67NY&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_19&otracker=search&otracker1=search&fm=organic&iid=9f358a32-441e-4ad4-bce1-c9fa8048a83d.TSHHHAA9PKGHWYBE.SEARCH&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - img [ref=e719]
+            - generic [ref=e721]:
+              - generic [ref=e722]: VeBNoR
+              - link "Men Solid Polo Neck Polyester Beige T-Shirt" [ref=e723] [cursor=pointer]:
+                - /url: /vebnor-solid-men-polo-neck-beige-t-shirt/p/itm3dbb8e1358ae1?pid=TSHHHAA9PKGHWYBE&lid=LSTTSHHHAA9PKGHWYBEPY67NY&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_19&otracker=search&otracker1=search&fm=organic&iid=9f358a32-441e-4ad4-bce1-c9fa8048a83d.TSHHHAA9PKGHWYBE.SEARCH&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - img [ref=e725]
+              - link "₹268 ₹999 73% off" [ref=e726] [cursor=pointer]:
+                - /url: /vebnor-solid-men-polo-neck-beige-t-shirt/p/itm3dbb8e1358ae1?pid=TSHHHAA9PKGHWYBE&lid=LSTTSHHHAA9PKGHWYBEPY67NY&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_19&otracker=search&otracker1=search&fm=organic&iid=9f358a32-441e-4ad4-bce1-c9fa8048a83d.TSHHHAA9PKGHWYBE.SEARCH&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+                - generic [ref=e727]:
+                  - generic [ref=e728]: ₹268
+                  - generic [ref=e729]: ₹999
+                  - generic [ref=e730]: 73% off
+              - generic [ref=e733]: Only few left
+          - generic [ref=e735]:
+            - link [ref=e736] [cursor=pointer]:
+              - /url: /kaspy-striped-men-round-neck-grey-t-shirt/p/itmbf3da6d114a34?pid=TSHGP7H5FYK3GRXF&lid=LSTTSHGP7H5FYK3GRXFIZPQZE&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_20&otracker=search&otracker1=search&fm=organic&iid=9f358a32-441e-4ad4-bce1-c9fa8048a83d.TSHGP7H5FYK3GRXF.SEARCH&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - img [ref=e743]
+            - generic [ref=e745]:
+              - generic [ref=e746]: KASPY
+              - link "Men Striped Round Neck Polyester Grey T-Shirt" [ref=e747] [cursor=pointer]:
+                - /url: /kaspy-striped-men-round-neck-grey-t-shirt/p/itmbf3da6d114a34?pid=TSHGP7H5FYK3GRXF&lid=LSTTSHGP7H5FYK3GRXFIZPQZE&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_20&otracker=search&otracker1=search&fm=organic&iid=9f358a32-441e-4ad4-bce1-c9fa8048a83d.TSHGP7H5FYK3GRXF.SEARCH&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - link "₹145 ₹499 70% off" [ref=e748] [cursor=pointer]:
+                - /url: /kaspy-striped-men-round-neck-grey-t-shirt/p/itmbf3da6d114a34?pid=TSHGP7H5FYK3GRXF&lid=LSTTSHGP7H5FYK3GRXFIZPQZE&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_20&otracker=search&otracker1=search&fm=organic&iid=9f358a32-441e-4ad4-bce1-c9fa8048a83d.TSHGP7H5FYK3GRXF.SEARCH&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+                - generic [ref=e749]:
+                  - generic [ref=e750]: ₹145
+                  - generic [ref=e751]: ₹499
+                  - generic [ref=e752]: 70% off
+              - generic [ref=e755]: Early Bird Deal
+        - generic [ref=e757]:
+          - generic [ref=e759]:
+            - link [ref=e760] [cursor=pointer]:
+              - /url: /kajaru-striped-men-zip-neck-green-t-shirt/p/itm075bc6e531633?pid=TSHHEFB5E94TZ5GJ&lid=LSTTSHHEFB5E94TZ5GJ8ATT5H&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_21&otracker=search&otracker1=search&fm=organic&iid=en_cLm-CX3lNis3L5T7ckRoO8tToN8hpPTf7ZRH-X9GRR2A9s4WqbdQvdZFh-LnkJ5aF1QPwkZ8lTC2NM_ZlXGodg%3D%3D&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - img [ref=e767]
+            - generic [ref=e769]:
+              - img [ref=e771]
+              - generic [ref=e774]: KAJARU
+              - link "Men Striped Zip Neck Polyester Green T-Shirt" [ref=e775] [cursor=pointer]:
+                - /url: /kajaru-striped-men-zip-neck-green-t-shirt/p/itm075bc6e531633?pid=TSHHEFB5E94TZ5GJ&lid=LSTTSHHEFB5E94TZ5GJ8ATT5H&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_21&otracker=search&otracker1=search&fm=organic&iid=en_cLm-CX3lNis3L5T7ckRoO8tToN8hpPTf7ZRH-X9GRR2A9s4WqbdQvdZFh-LnkJ5aF1QPwkZ8lTC2NM_ZlXGodg%3D%3D&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - img [ref=e777]
+              - link "₹241 ₹999 75% off" [ref=e778] [cursor=pointer]:
+                - /url: /kajaru-striped-men-zip-neck-green-t-shirt/p/itm075bc6e531633?pid=TSHHEFB5E94TZ5GJ&lid=LSTTSHHEFB5E94TZ5GJ8ATT5H&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_21&otracker=search&otracker1=search&fm=organic&iid=en_cLm-CX3lNis3L5T7ckRoO8tToN8hpPTf7ZRH-X9GRR2A9s4WqbdQvdZFh-LnkJ5aF1QPwkZ8lTC2NM_ZlXGodg%3D%3D&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+                - generic [ref=e779]:
+                  - generic [ref=e780]: ₹241
+                  - generic [ref=e781]: ₹999
+                  - generic [ref=e782]: 75% off
+              - generic [ref=e785]: Early Bird Deal
+          - generic [ref=e787]:
+            - link [ref=e788] [cursor=pointer]:
+              - /url: /bullmer-printed-men-round-neck-multicolor-t-shirt/p/itmc52671e935123?pid=TSHH5JTGPXYZ2FQE&lid=LSTTSHH5JTGPXYZ2FQEZTZSCF&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_22&otracker=search&otracker1=search&fm=organic&iid=en_cLm-CX3lNis3L5T7ckRoO8tToN8hpPTf7ZRH-X9GRR3vph0VJhFtG-dZPTYhbnMEGJqG82IguM_ttCH8pYba9_UFjCTyOHoHZs-Z5_PS_w0%3D&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - img [ref=e795]
+            - generic [ref=e797]:
+              - img [ref=e799]
+              - generic [ref=e802]: Bullmer
+              - link "Pack of 2 Men Printed Round Neck Cotton Blend Multicolo..." [ref=e803] [cursor=pointer]:
+                - /url: /bullmer-printed-men-round-neck-multicolor-t-shirt/p/itmc52671e935123?pid=TSHH5JTGPXYZ2FQE&lid=LSTTSHH5JTGPXYZ2FQEZTZSCF&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_22&otracker=search&otracker1=search&fm=organic&iid=en_cLm-CX3lNis3L5T7ckRoO8tToN8hpPTf7ZRH-X9GRR3vph0VJhFtG-dZPTYhbnMEGJqG82IguM_ttCH8pYba9_UFjCTyOHoHZs-Z5_PS_w0%3D&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - link "₹290 ₹1,998 85% off" [ref=e804] [cursor=pointer]:
+                - /url: /bullmer-printed-men-round-neck-multicolor-t-shirt/p/itmc52671e935123?pid=TSHH5JTGPXYZ2FQE&lid=LSTTSHH5JTGPXYZ2FQEZTZSCF&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_22&otracker=search&otracker1=search&fm=organic&iid=en_cLm-CX3lNis3L5T7ckRoO8tToN8hpPTf7ZRH-X9GRR3vph0VJhFtG-dZPTYhbnMEGJqG82IguM_ttCH8pYba9_UFjCTyOHoHZs-Z5_PS_w0%3D&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+                - generic [ref=e805]:
+                  - generic [ref=e806]: ₹290
+                  - generic [ref=e807]: ₹1,998
+                  - generic [ref=e808]: 85% off
+              - generic [ref=e811]: Hot Deal
+          - generic [ref=e813]:
+            - link [ref=e814] [cursor=pointer]:
+              - /url: /allen-solly-solid-men-polo-neck-black-t-shirt/p/itme90920c7f587d?pid=TSHGTBWVMSFJNKBY&lid=LSTTSHGTBWVMSFJNKBYCWHFYO&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&spotlightTagId=default_BestsellerId_clo%2Fash%2Fank&srno=s_1_23&otracker=search&otracker1=search&fm=organic&iid=9f358a32-441e-4ad4-bce1-c9fa8048a83d.TSHGTBWVMSFJNKBY.SEARCH&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - img [ref=e821]
+            - generic [ref=e823]:
+              - generic [ref=e824]: Allen Solly
+              - link "Men Solid Polo Neck Cotton Blend Black T-Shirt" [ref=e825] [cursor=pointer]:
+                - /url: /allen-solly-solid-men-polo-neck-black-t-shirt/p/itme90920c7f587d?pid=TSHGTBWVMSFJNKBY&lid=LSTTSHGTBWVMSFJNKBYCWHFYO&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&spotlightTagId=default_BestsellerId_clo%2Fash%2Fank&srno=s_1_23&otracker=search&otracker1=search&fm=organic&iid=9f358a32-441e-4ad4-bce1-c9fa8048a83d.TSHGTBWVMSFJNKBY.SEARCH&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - img [ref=e827]
+              - link "₹449 ₹1,099 59% off" [ref=e828] [cursor=pointer]:
+                - /url: /allen-solly-solid-men-polo-neck-black-t-shirt/p/itme90920c7f587d?pid=TSHGTBWVMSFJNKBY&lid=LSTTSHGTBWVMSFJNKBYCWHFYO&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&spotlightTagId=default_BestsellerId_clo%2Fash%2Fank&srno=s_1_23&otracker=search&otracker1=search&fm=organic&iid=9f358a32-441e-4ad4-bce1-c9fa8048a83d.TSHGTBWVMSFJNKBY.SEARCH&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+                - generic [ref=e829]:
+                  - generic [ref=e830]: ₹449
+                  - generic [ref=e831]: ₹1,099
+                  - generic [ref=e832]: 59% off
+              - generic [ref=e835]: Early Bird Deal
+          - generic [ref=e837]:
+            - link [ref=e838] [cursor=pointer]:
+              - /url: /louis-philippe-jeans-solid-men-polo-neck-yellow-t-shirt/p/itm1b9848ac904f6?pid=TSHGPPARVZRMAJRU&lid=LSTTSHGPPARVZRMAJRUHQXJQV&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_24&otracker=search&otracker1=search&fm=organic&iid=9f358a32-441e-4ad4-bce1-c9fa8048a83d.TSHGPPARVZRMAJRU.SEARCH&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - img [ref=e845]
+            - generic [ref=e847]:
+              - generic [ref=e848]: Louis Philippe Jeans
+              - link "Slim Fit Casual Men Solid Polo Neck Pure Cotton Yellow ..." [ref=e849] [cursor=pointer]:
+                - /url: /louis-philippe-jeans-solid-men-polo-neck-yellow-t-shirt/p/itm1b9848ac904f6?pid=TSHGPPARVZRMAJRU&lid=LSTTSHGPPARVZRMAJRUHQXJQV&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_24&otracker=search&otracker1=search&fm=organic&iid=9f358a32-441e-4ad4-bce1-c9fa8048a83d.TSHGPPARVZRMAJRU.SEARCH&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - img [ref=e851]
+              - link "₹539 ₹1,499 64% off" [ref=e852] [cursor=pointer]:
+                - /url: /louis-philippe-jeans-solid-men-polo-neck-yellow-t-shirt/p/itm1b9848ac904f6?pid=TSHGPPARVZRMAJRU&lid=LSTTSHGPPARVZRMAJRUHQXJQV&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_24&otracker=search&otracker1=search&fm=organic&iid=9f358a32-441e-4ad4-bce1-c9fa8048a83d.TSHGPPARVZRMAJRU.SEARCH&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+                - generic [ref=e853]:
+                  - generic [ref=e854]: ₹539
+                  - generic [ref=e855]: ₹1,499
+                  - generic [ref=e856]: 64% off
+              - generic [ref=e859]: Early Bird Deal
+        - generic [ref=e861]:
+          - generic [ref=e863]:
+            - link [ref=e864] [cursor=pointer]:
+              - /url: /louis-philippe-jeans-solid-men-polo-neck-brown-t-shirt/p/itm9411104ce4a04?pid=TSHGSBF6HGSPB5PZ&lid=LSTTSHGSBF6HGSPB5PZK8HGPC&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_25&otracker=search&otracker1=search&fm=organic&iid=9f358a32-441e-4ad4-bce1-c9fa8048a83d.TSHGSBF6HGSPB5PZ.SEARCH&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - img [ref=e871]
+            - generic [ref=e873]:
+              - generic [ref=e874]: Louis Philippe Jeans
+              - link "Slim Fit Casual Men Solid Polo Neck Pure Cotton Brown T..." [ref=e875] [cursor=pointer]:
+                - /url: /louis-philippe-jeans-solid-men-polo-neck-brown-t-shirt/p/itm9411104ce4a04?pid=TSHGSBF6HGSPB5PZ&lid=LSTTSHGSBF6HGSPB5PZK8HGPC&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_25&otracker=search&otracker1=search&fm=organic&iid=9f358a32-441e-4ad4-bce1-c9fa8048a83d.TSHGSBF6HGSPB5PZ.SEARCH&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - img [ref=e877]
+              - link "₹539 ₹1,499 64% off" [ref=e878] [cursor=pointer]:
+                - /url: /louis-philippe-jeans-solid-men-polo-neck-brown-t-shirt/p/itm9411104ce4a04?pid=TSHGSBF6HGSPB5PZ&lid=LSTTSHGSBF6HGSPB5PZK8HGPC&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_25&otracker=search&otracker1=search&fm=organic&iid=9f358a32-441e-4ad4-bce1-c9fa8048a83d.TSHGSBF6HGSPB5PZ.SEARCH&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+                - generic [ref=e879]:
+                  - generic [ref=e880]: ₹539
+                  - generic [ref=e881]: ₹1,499
+                  - generic [ref=e882]: 64% off
+              - generic [ref=e885]: Early Bird Deal
+          - generic [ref=e887]:
+            - link [ref=e888] [cursor=pointer]:
+              - /url: /dyrectdeals-colorblock-men-polo-neck-dark-green-t-shirt/p/itmf062e88c66cca?pid=TSHGMG9X9CBPGHMA&lid=LSTTSHGMG9X9CBPGHMA2EFZPA&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_26&otracker=search&otracker1=search&fm=organic&iid=9f358a32-441e-4ad4-bce1-c9fa8048a83d.TSHGMG9X9CBPGHMA.SEARCH&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - img [ref=e895]
+            - generic [ref=e897]:
+              - generic [ref=e898]: DyrectDeals
+              - link "Men Colorblock Polo Neck Polycotton Dark Green T-Shirt" [ref=e899] [cursor=pointer]:
+                - /url: /dyrectdeals-colorblock-men-polo-neck-dark-green-t-shirt/p/itmf062e88c66cca?pid=TSHGMG9X9CBPGHMA&lid=LSTTSHGMG9X9CBPGHMA2EFZPA&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_26&otracker=search&otracker1=search&fm=organic&iid=9f358a32-441e-4ad4-bce1-c9fa8048a83d.TSHGMG9X9CBPGHMA.SEARCH&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - link "₹261 ₹1,299 79% off" [ref=e900] [cursor=pointer]:
+                - /url: /dyrectdeals-colorblock-men-polo-neck-dark-green-t-shirt/p/itmf062e88c66cca?pid=TSHGMG9X9CBPGHMA&lid=LSTTSHGMG9X9CBPGHMA2EFZPA&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_26&otracker=search&otracker1=search&fm=organic&iid=9f358a32-441e-4ad4-bce1-c9fa8048a83d.TSHGMG9X9CBPGHMA.SEARCH&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+                - generic [ref=e901]:
+                  - generic [ref=e902]: ₹261
+                  - generic [ref=e903]: ₹1,299
+                  - generic [ref=e904]: 79% off
+              - generic [ref=e907]: Early Bird Deal
+          - generic [ref=e909]:
+            - link [ref=e910] [cursor=pointer]:
+              - /url: /tripr-solid-men-round-neck-multicolor-t-shirt/p/itm515d9e7a2cb95?pid=TSHH8CNZP8HVFAA7&lid=LSTTSHH8CNZP8HVFAA7WYM7II&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_27&otracker=search&otracker1=search&fm=organic&iid=en_cLm-CX3lNis3L5T7ckRoO8tToN8hpPTf7ZRH-X9GRR2lfQzZwia_5Uz0HL-o60xBdQy2wZAX02thkveN9ZvAmEF-RT516lNv_aeXIPaRjgQ%3D&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - img [ref=e917]
+            - generic [ref=e919]:
+              - img [ref=e921]
+              - generic [ref=e924]: TRIPR
+              - link "Pack of 4 Men Solid Round Neck Cotton Blend Multicolor ..." [ref=e925] [cursor=pointer]:
+                - /url: /tripr-solid-men-round-neck-multicolor-t-shirt/p/itm515d9e7a2cb95?pid=TSHH8CNZP8HVFAA7&lid=LSTTSHH8CNZP8HVFAA7WYM7II&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_27&otracker=search&otracker1=search&fm=organic&iid=en_cLm-CX3lNis3L5T7ckRoO8tToN8hpPTf7ZRH-X9GRR2lfQzZwia_5Uz0HL-o60xBdQy2wZAX02thkveN9ZvAmEF-RT516lNv_aeXIPaRjgQ%3D&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - link "₹441 ₹1,999 77% off" [ref=e926] [cursor=pointer]:
+                - /url: /tripr-solid-men-round-neck-multicolor-t-shirt/p/itm515d9e7a2cb95?pid=TSHH8CNZP8HVFAA7&lid=LSTTSHH8CNZP8HVFAA7WYM7II&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_27&otracker=search&otracker1=search&fm=organic&iid=en_cLm-CX3lNis3L5T7ckRoO8tToN8hpPTf7ZRH-X9GRR2lfQzZwia_5Uz0HL-o60xBdQy2wZAX02thkveN9ZvAmEF-RT516lNv_aeXIPaRjgQ%3D&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+                - generic [ref=e927]:
+                  - generic [ref=e928]: ₹441
+                  - generic [ref=e929]: ₹1,999
+                  - generic [ref=e930]: 77% off
+              - generic [ref=e933]: Early Bird Deal
+          - generic [ref=e935]:
+            - link [ref=e936] [cursor=pointer]:
+              - /url: /tripr-printed-men-round-neck-black-t-shirt/p/itm9bbf01a1171fe?pid=TSHHAAVEBKSWCZFB&lid=LSTTSHHAAVEBKSWCZFBTV4Y09&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_28&otracker=search&otracker1=search&fm=organic&iid=en_cLm-CX3lNis3L5T7ckRoO8tToN8hpPTf7ZRH-X9GRR27WpNkxrFEtks3s9m8D6ypEcljFX5BI4vRa4OAeQi90awh4GJdccUSVsNPTiGrw-0%3D&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - img [ref=e943]
+            - generic [ref=e945]:
+              - img [ref=e947]
+              - generic [ref=e950]: TRIPR
+              - link "Pack of 3 Men Printed Round Neck Cotton Blend Black T-S..." [ref=e951] [cursor=pointer]:
+                - /url: /tripr-printed-men-round-neck-black-t-shirt/p/itm9bbf01a1171fe?pid=TSHHAAVEBKSWCZFB&lid=LSTTSHHAAVEBKSWCZFBTV4Y09&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_28&otracker=search&otracker1=search&fm=organic&iid=en_cLm-CX3lNis3L5T7ckRoO8tToN8hpPTf7ZRH-X9GRR27WpNkxrFEtks3s9m8D6ypEcljFX5BI4vRa4OAeQi90awh4GJdccUSVsNPTiGrw-0%3D&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - link "₹416 ₹999 58% off" [ref=e952] [cursor=pointer]:
+                - /url: /tripr-printed-men-round-neck-black-t-shirt/p/itm9bbf01a1171fe?pid=TSHHAAVEBKSWCZFB&lid=LSTTSHHAAVEBKSWCZFBTV4Y09&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_28&otracker=search&otracker1=search&fm=organic&iid=en_cLm-CX3lNis3L5T7ckRoO8tToN8hpPTf7ZRH-X9GRR27WpNkxrFEtks3s9m8D6ypEcljFX5BI4vRa4OAeQi90awh4GJdccUSVsNPTiGrw-0%3D&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+                - generic [ref=e953]:
+                  - generic [ref=e954]: ₹416
+                  - generic [ref=e955]: ₹999
+                  - generic [ref=e956]: 58% off
+              - generic [ref=e959]: Early Bird Deal
+        - generic [ref=e961]:
+          - generic [ref=e963]:
+            - link [ref=e964] [cursor=pointer]:
+              - /url: /tripr-solid-men-henley-neck-grey-t-shirt/p/itm30f825b0326fe?pid=TSHHN66PZV4EPYJF&lid=LSTTSHHN66PZV4EPYJF35SBXE&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_29&otracker=search&otracker1=search&fm=organic&iid=9f358a32-441e-4ad4-bce1-c9fa8048a83d.TSHHN66PZV4EPYJF.SEARCH&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - img [ref=e971]
+            - generic [ref=e973]:
+              - generic [ref=e974]: TRIPR
+              - link "Men Solid Henley Neck Cotton Blend Grey T-Shirt" [ref=e975] [cursor=pointer]:
+                - /url: /tripr-solid-men-henley-neck-grey-t-shirt/p/itm30f825b0326fe?pid=TSHHN66PZV4EPYJF&lid=LSTTSHHN66PZV4EPYJF35SBXE&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_29&otracker=search&otracker1=search&fm=organic&iid=9f358a32-441e-4ad4-bce1-c9fa8048a83d.TSHHN66PZV4EPYJF.SEARCH&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - link "₹256 ₹999 74% off" [ref=e976] [cursor=pointer]:
+                - /url: /tripr-solid-men-henley-neck-grey-t-shirt/p/itm30f825b0326fe?pid=TSHHN66PZV4EPYJF&lid=LSTTSHHN66PZV4EPYJF35SBXE&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_29&otracker=search&otracker1=search&fm=organic&iid=9f358a32-441e-4ad4-bce1-c9fa8048a83d.TSHHN66PZV4EPYJF.SEARCH&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+                - generic [ref=e977]:
+                  - generic [ref=e978]: ₹256
+                  - generic [ref=e979]: ₹999
+                  - generic [ref=e980]: 74% off
+              - generic [ref=e983]: Only few left
+          - generic [ref=e985]:
+            - link [ref=e986] [cursor=pointer]:
+              - /url: /vebnor-self-design-men-polo-neck-light-green-t-shirt/p/itm83671e2bbcec7?pid=TSHHCBZH82YXQ9AW&lid=LSTTSHHCBZH82YXQ9AWU4CCTE&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_30&otracker=search&otracker1=search&fm=organic&iid=9f358a32-441e-4ad4-bce1-c9fa8048a83d.TSHHCBZH82YXQ9AW.SEARCH&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - img [ref=e993]
+            - generic [ref=e995]:
+              - generic [ref=e996]: VeBNoR
+              - link "Men Self Design Polo Neck Polyester Light Green T-Shirt" [ref=e997] [cursor=pointer]:
+                - /url: /vebnor-self-design-men-polo-neck-light-green-t-shirt/p/itm83671e2bbcec7?pid=TSHHCBZH82YXQ9AW&lid=LSTTSHHCBZH82YXQ9AWU4CCTE&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_30&otracker=search&otracker1=search&fm=organic&iid=9f358a32-441e-4ad4-bce1-c9fa8048a83d.TSHHCBZH82YXQ9AW.SEARCH&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - img [ref=e999]
+              - link "₹250 ₹999 74% off" [ref=e1000] [cursor=pointer]:
+                - /url: /vebnor-self-design-men-polo-neck-light-green-t-shirt/p/itm83671e2bbcec7?pid=TSHHCBZH82YXQ9AW&lid=LSTTSHHCBZH82YXQ9AWU4CCTE&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_30&otracker=search&otracker1=search&fm=organic&iid=9f358a32-441e-4ad4-bce1-c9fa8048a83d.TSHHCBZH82YXQ9AW.SEARCH&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+                - generic [ref=e1001]:
+                  - generic [ref=e1002]: ₹250
+                  - generic [ref=e1003]: ₹999
+                  - generic [ref=e1004]: 74% off
+              - generic [ref=e1007]: Only few left
+          - generic [ref=e1009]:
+            - link [ref=e1010] [cursor=pointer]:
+              - /url: /tripr-solid-men-round-neck-multicolor-t-shirt/p/itmf11071043845c?pid=TSHH7USMZHYU4FTJ&lid=LSTTSHH7USMZHYU4FTJJGRWDV&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_31&otracker=search&otracker1=search&fm=organic&iid=en_cLm-CX3lNis3L5T7ckRoO8tToN8hpPTf7ZRH-X9GRR1DVdkVGT1H7LAIF1wvLF2bZwBYybl77NCo75qBSluu1XxHajYNyuWOMhuZi0IpbY0%3D&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - img [ref=e1017]
+            - generic [ref=e1019]:
+              - img [ref=e1021]
+              - generic [ref=e1024]: TRIPR
+              - link "Pack of 3 Men Solid Round Neck Cotton Blend Multicolor ..." [ref=e1025] [cursor=pointer]:
+                - /url: /tripr-solid-men-round-neck-multicolor-t-shirt/p/itmf11071043845c?pid=TSHH7USMZHYU4FTJ&lid=LSTTSHH7USMZHYU4FTJJGRWDV&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_31&otracker=search&otracker1=search&fm=organic&iid=en_cLm-CX3lNis3L5T7ckRoO8tToN8hpPTf7ZRH-X9GRR1DVdkVGT1H7LAIF1wvLF2bZwBYybl77NCo75qBSluu1XxHajYNyuWOMhuZi0IpbY0%3D&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - img [ref=e1027]
+              - link "₹378 ₹1,999 81% off" [ref=e1028] [cursor=pointer]:
+                - /url: /tripr-solid-men-round-neck-multicolor-t-shirt/p/itmf11071043845c?pid=TSHH7USMZHYU4FTJ&lid=LSTTSHH7USMZHYU4FTJJGRWDV&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_31&otracker=search&otracker1=search&fm=organic&iid=en_cLm-CX3lNis3L5T7ckRoO8tToN8hpPTf7ZRH-X9GRR1DVdkVGT1H7LAIF1wvLF2bZwBYybl77NCo75qBSluu1XxHajYNyuWOMhuZi0IpbY0%3D&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+                - generic [ref=e1029]:
+                  - generic [ref=e1030]: ₹378
+                  - generic [ref=e1031]: ₹1,999
+                  - generic [ref=e1032]: 81% off
+              - generic [ref=e1035]: Early Bird Deal
+          - generic [ref=e1037]:
+            - link [ref=e1038] [cursor=pointer]:
+              - /url: /kajaru-striped-men-round-neck-pink-dark-green-t-shirt/p/itm8d68a7c4d9d99?pid=TSHGQHURERWXDF2Y&lid=LSTTSHGQHURERWXDF2YYWN9US&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_32&otracker=search&otracker1=search&fm=organic&iid=en_cLm-CX3lNis3L5T7ckRoO8tToN8hpPTf7ZRH-X9GRR0ISbHUScblH9_2-v26899Ib_zT2Jc4YtT315dy8O9_fw%3D%3D&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - img [ref=e1045]
+            - generic [ref=e1047]:
+              - img [ref=e1049]
+              - generic [ref=e1052]: KAJARU
+              - link "Pack of 2 Men Striped Round Neck Polyester Pink, Dark G..." [ref=e1053] [cursor=pointer]:
+                - /url: /kajaru-striped-men-round-neck-pink-dark-green-t-shirt/p/itm8d68a7c4d9d99?pid=TSHGQHURERWXDF2Y&lid=LSTTSHGQHURERWXDF2YYWN9US&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_32&otracker=search&otracker1=search&fm=organic&iid=en_cLm-CX3lNis3L5T7ckRoO8tToN8hpPTf7ZRH-X9GRR0ISbHUScblH9_2-v26899Ib_zT2Jc4YtT315dy8O9_fw%3D%3D&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - link "₹313 ₹1,899 83% off" [ref=e1054] [cursor=pointer]:
+                - /url: /kajaru-striped-men-round-neck-pink-dark-green-t-shirt/p/itm8d68a7c4d9d99?pid=TSHGQHURERWXDF2Y&lid=LSTTSHGQHURERWXDF2YYWN9US&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_32&otracker=search&otracker1=search&fm=organic&iid=en_cLm-CX3lNis3L5T7ckRoO8tToN8hpPTf7ZRH-X9GRR0ISbHUScblH9_2-v26899Ib_zT2Jc4YtT315dy8O9_fw%3D%3D&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+                - generic [ref=e1055]:
+                  - generic [ref=e1056]: ₹313
+                  - generic [ref=e1057]: ₹1,899
+                  - generic [ref=e1058]: 83% off
+              - generic [ref=e1061]: Early Bird Deal
+        - generic [ref=e1063]:
+          - generic [ref=e1065]:
+            - link [ref=e1066] [cursor=pointer]:
+              - /url: /vebnor-solid-men-polo-neck-beige-t-shirt/p/itm68621b608d215?pid=TSHHK6YD933GN85R&lid=LSTTSHHK6YD933GN85RGOUAP5&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_33&otracker=search&otracker1=search&fm=organic&iid=9f358a32-441e-4ad4-bce1-c9fa8048a83d.TSHHK6YD933GN85R.SEARCH&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - img [ref=e1073]
+            - generic [ref=e1075]:
+              - generic [ref=e1076]: VeBNoR
+              - link "Men Solid Polo Neck Polyester Beige T-Shirt" [ref=e1077] [cursor=pointer]:
+                - /url: /vebnor-solid-men-polo-neck-beige-t-shirt/p/itm68621b608d215?pid=TSHHK6YD933GN85R&lid=LSTTSHHK6YD933GN85RGOUAP5&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_33&otracker=search&otracker1=search&fm=organic&iid=9f358a32-441e-4ad4-bce1-c9fa8048a83d.TSHHK6YD933GN85R.SEARCH&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - img [ref=e1079]
+              - link "₹245 ₹999 75% off" [ref=e1080] [cursor=pointer]:
+                - /url: /vebnor-solid-men-polo-neck-beige-t-shirt/p/itm68621b608d215?pid=TSHHK6YD933GN85R&lid=LSTTSHHK6YD933GN85RGOUAP5&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_33&otracker=search&otracker1=search&fm=organic&iid=9f358a32-441e-4ad4-bce1-c9fa8048a83d.TSHHK6YD933GN85R.SEARCH&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+                - generic [ref=e1081]:
+                  - generic [ref=e1082]: ₹245
+                  - generic [ref=e1083]: ₹999
+                  - generic [ref=e1084]: 75% off
+              - generic [ref=e1087]: Only few left
+          - generic [ref=e1089]:
+            - link [ref=e1090] [cursor=pointer]:
+              - /url: /vebnor-solid-men-polo-neck-pink-t-shirt/p/itma5dfc620e35b9?pid=TSHGRS6KGTWD2SHC&lid=LSTTSHGRS6KGTWD2SHC0JIA59&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_34&otracker=search&otracker1=search&fm=organic&iid=9f358a32-441e-4ad4-bce1-c9fa8048a83d.TSHGRS6KGTWD2SHC.SEARCH&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - img [ref=e1097]
+            - generic [ref=e1099]:
+              - generic [ref=e1100]: VeBNoR
+              - link "Men Solid Polo Neck Polyester Pink T-Shirt" [ref=e1101] [cursor=pointer]:
+                - /url: /vebnor-solid-men-polo-neck-pink-t-shirt/p/itma5dfc620e35b9?pid=TSHGRS6KGTWD2SHC&lid=LSTTSHGRS6KGTWD2SHC0JIA59&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_34&otracker=search&otracker1=search&fm=organic&iid=9f358a32-441e-4ad4-bce1-c9fa8048a83d.TSHGRS6KGTWD2SHC.SEARCH&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - img [ref=e1103]
+              - link "₹242 ₹999 75% off" [ref=e1104] [cursor=pointer]:
+                - /url: /vebnor-solid-men-polo-neck-pink-t-shirt/p/itma5dfc620e35b9?pid=TSHGRS6KGTWD2SHC&lid=LSTTSHGRS6KGTWD2SHC0JIA59&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_34&otracker=search&otracker1=search&fm=organic&iid=9f358a32-441e-4ad4-bce1-c9fa8048a83d.TSHGRS6KGTWD2SHC.SEARCH&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+                - generic [ref=e1105]:
+                  - generic [ref=e1106]: ₹242
+                  - generic [ref=e1107]: ₹999
+                  - generic [ref=e1108]: 75% off
+              - generic [ref=e1111]: Only few left
+          - generic [ref=e1113]:
+            - link [ref=e1114] [cursor=pointer]:
+              - /url: /allen-solly-solid-men-polo-neck-maroon-t-shirt/p/itm5648b3eb638d6?pid=TSHGTBWVREJ8DHKD&lid=LSTTSHGTBWVREJ8DHKD6EB7WD&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_35&otracker=search&otracker1=search&fm=organic&iid=9f358a32-441e-4ad4-bce1-c9fa8048a83d.TSHGTBWVREJ8DHKD.SEARCH&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - img [ref=e1121]
+            - generic [ref=e1123]:
+              - generic [ref=e1124]: Allen Solly
+              - link "Men Solid Polo Neck Cotton Blend Maroon T-Shirt" [ref=e1125] [cursor=pointer]:
+                - /url: /allen-solly-solid-men-polo-neck-maroon-t-shirt/p/itm5648b3eb638d6?pid=TSHGTBWVREJ8DHKD&lid=LSTTSHGTBWVREJ8DHKD6EB7WD&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_35&otracker=search&otracker1=search&fm=organic&iid=9f358a32-441e-4ad4-bce1-c9fa8048a83d.TSHGTBWVREJ8DHKD.SEARCH&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - img [ref=e1127]
+              - link "₹449 ₹1,099 59% off" [ref=e1128] [cursor=pointer]:
+                - /url: /allen-solly-solid-men-polo-neck-maroon-t-shirt/p/itm5648b3eb638d6?pid=TSHGTBWVREJ8DHKD&lid=LSTTSHGTBWVREJ8DHKD6EB7WD&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_35&otracker=search&otracker1=search&fm=organic&iid=9f358a32-441e-4ad4-bce1-c9fa8048a83d.TSHGTBWVREJ8DHKD.SEARCH&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+                - generic [ref=e1129]:
+                  - generic [ref=e1130]: ₹449
+                  - generic [ref=e1131]: ₹1,099
+                  - generic [ref=e1132]: 59% off
+              - generic [ref=e1135]: Early Bird Deal
+          - generic [ref=e1137]:
+            - link [ref=e1138] [cursor=pointer]:
+              - /url: /3bros-solid-men-polo-neck-green-t-shirt/p/itm7e860cbd6041c?pid=TSHGBAWVZNDGMFZP&lid=LSTTSHGBAWVZNDGMFZPGXUJGQ&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_36&otracker=search&otracker1=search&fm=organic&iid=9f358a32-441e-4ad4-bce1-c9fa8048a83d.TSHGBAWVZNDGMFZP.SEARCH&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - img [ref=e1145]
+            - generic [ref=e1147]:
+              - generic [ref=e1148]: 3BROS
+              - link "Men Solid Polo Neck Cotton Blend (220 gsm) Green T-Shir..." [ref=e1149] [cursor=pointer]:
+                - /url: /3bros-solid-men-polo-neck-green-t-shirt/p/itm7e860cbd6041c?pid=TSHGBAWVZNDGMFZP&lid=LSTTSHGBAWVZNDGMFZPGXUJGQ&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_36&otracker=search&otracker1=search&fm=organic&iid=9f358a32-441e-4ad4-bce1-c9fa8048a83d.TSHGBAWVZNDGMFZP.SEARCH&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - img [ref=e1151]
+              - link "₹315 ₹999 68% off" [ref=e1152] [cursor=pointer]:
+                - /url: /3bros-solid-men-polo-neck-green-t-shirt/p/itm7e860cbd6041c?pid=TSHGBAWVZNDGMFZP&lid=LSTTSHGBAWVZNDGMFZPGXUJGQ&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_36&otracker=search&otracker1=search&fm=organic&iid=9f358a32-441e-4ad4-bce1-c9fa8048a83d.TSHGBAWVZNDGMFZP.SEARCH&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+                - generic [ref=e1153]:
+                  - generic [ref=e1154]: ₹315
+                  - generic [ref=e1155]: ₹999
+                  - generic [ref=e1156]: 68% off
+              - generic [ref=e1159]: Early Bird Deal
+        - generic [ref=e1161]:
+          - generic [ref=e1163]:
+            - link [ref=e1164] [cursor=pointer]:
+              - /url: /tripr-solid-men-round-neck-navy-blue-maroon-t-shirt/p/itm2b912254bc915?pid=TSHHJD4YK63USKF2&lid=LSTTSHHJD4YK63USKF2JCZTJX&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_37&otracker=search&otracker1=search&fm=organic&iid=en_cLm-CX3lNis3L5T7ckRoO8tToN8hpPTf7ZRH-X9GRR0j_ZEuKCOUYm3Amj3umxhZSXGV8bpQnzFAnbq0R88LOa1KaJFgl7OeEdnchgqx4tA%3D&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - img [ref=e1171]
+            - generic [ref=e1173]:
+              - img [ref=e1175]
+              - generic [ref=e1178]: TRIPR
+              - link "Pack of 2 Men Solid Round Neck Cotton Blend Navy Blue, ..." [ref=e1179] [cursor=pointer]:
+                - /url: /tripr-solid-men-round-neck-navy-blue-maroon-t-shirt/p/itm2b912254bc915?pid=TSHHJD4YK63USKF2&lid=LSTTSHHJD4YK63USKF2JCZTJX&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_37&otracker=search&otracker1=search&fm=organic&iid=en_cLm-CX3lNis3L5T7ckRoO8tToN8hpPTf7ZRH-X9GRR0j_ZEuKCOUYm3Amj3umxhZSXGV8bpQnzFAnbq0R88LOa1KaJFgl7OeEdnchgqx4tA%3D&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - link "₹291 ₹999 70% off" [ref=e1180] [cursor=pointer]:
+                - /url: /tripr-solid-men-round-neck-navy-blue-maroon-t-shirt/p/itm2b912254bc915?pid=TSHHJD4YK63USKF2&lid=LSTTSHHJD4YK63USKF2JCZTJX&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_37&otracker=search&otracker1=search&fm=organic&iid=en_cLm-CX3lNis3L5T7ckRoO8tToN8hpPTf7ZRH-X9GRR0j_ZEuKCOUYm3Amj3umxhZSXGV8bpQnzFAnbq0R88LOa1KaJFgl7OeEdnchgqx4tA%3D&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+                - generic [ref=e1181]:
+                  - generic [ref=e1182]: ₹291
+                  - generic [ref=e1183]: ₹999
+                  - generic [ref=e1184]: 70% off
+              - generic [ref=e1187]: Hot Deal
+          - generic [ref=e1189]:
+            - link [ref=e1190] [cursor=pointer]:
+              - /url: /kajaru-printed-men-round-neck-green-blue-t-shirt/p/itm68f191baa44db?pid=TSHH8ZFWYJGQHMFC&lid=LSTTSHH8ZFWYJGQHMFCPLNK7K&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_38&otracker=search&otracker1=search&fm=organic&iid=en_cLm-CX3lNis3L5T7ckRoO8tToN8hpPTf7ZRH-X9GRR2ziiro79wrbVpdCbfCxdRNCtORYmzvPz3YyWA0yHvxkvUFjCTyOHoHZs-Z5_PS_w0%3D&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - img [ref=e1197]
+            - generic [ref=e1199]:
+              - img [ref=e1201]
+              - generic [ref=e1204]: KAJARU
+              - link "Men Printed Round Neck Polyester Green, Blue T-Shirt" [ref=e1205] [cursor=pointer]:
+                - /url: /kajaru-printed-men-round-neck-green-blue-t-shirt/p/itm68f191baa44db?pid=TSHH8ZFWYJGQHMFC&lid=LSTTSHH8ZFWYJGQHMFCPLNK7K&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_38&otracker=search&otracker1=search&fm=organic&iid=en_cLm-CX3lNis3L5T7ckRoO8tToN8hpPTf7ZRH-X9GRR2ziiro79wrbVpdCbfCxdRNCtORYmzvPz3YyWA0yHvxkvUFjCTyOHoHZs-Z5_PS_w0%3D&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - link "₹158 ₹999 84% off" [ref=e1206] [cursor=pointer]:
+                - /url: /kajaru-printed-men-round-neck-green-blue-t-shirt/p/itm68f191baa44db?pid=TSHH8ZFWYJGQHMFC&lid=LSTTSHH8ZFWYJGQHMFCPLNK7K&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_38&otracker=search&otracker1=search&fm=organic&iid=en_cLm-CX3lNis3L5T7ckRoO8tToN8hpPTf7ZRH-X9GRR2ziiro79wrbVpdCbfCxdRNCtORYmzvPz3YyWA0yHvxkvUFjCTyOHoHZs-Z5_PS_w0%3D&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+                - generic [ref=e1207]:
+                  - generic [ref=e1208]: ₹158
+                  - generic [ref=e1209]: ₹999
+                  - generic [ref=e1210]: 84% off
+              - generic [ref=e1213]: Early Bird Deal
+          - generic [ref=e1215]:
+            - link [ref=e1216] [cursor=pointer]:
+              - /url: /veirdo-printed-typography-men-round-neck-green-t-shirt/p/itm73afcfccf961d?pid=TSHH3SY9HMAWFFUD&lid=LSTTSHH3SY9HMAWFFUD4VN9RA&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_39&otracker=search&otracker1=search&fm=organic&iid=9f358a32-441e-4ad4-bce1-c9fa8048a83d.TSHH3SY9HMAWFFUD.SEARCH&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - img [ref=e1223]
+            - generic [ref=e1225]:
+              - generic [ref=e1226]: Veirdo
+              - link "Oversized Men Printed, Typography Round Neck Pure Cotto..." [ref=e1227] [cursor=pointer]:
+                - /url: /veirdo-printed-typography-men-round-neck-green-t-shirt/p/itm73afcfccf961d?pid=TSHH3SY9HMAWFFUD&lid=LSTTSHH3SY9HMAWFFUD4VN9RA&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_39&otracker=search&otracker1=search&fm=organic&iid=9f358a32-441e-4ad4-bce1-c9fa8048a83d.TSHH3SY9HMAWFFUD.SEARCH&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - img [ref=e1229]
+              - link "₹359 ₹1,199 70% off" [ref=e1230] [cursor=pointer]:
+                - /url: /veirdo-printed-typography-men-round-neck-green-t-shirt/p/itm73afcfccf961d?pid=TSHH3SY9HMAWFFUD&lid=LSTTSHH3SY9HMAWFFUD4VN9RA&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_39&otracker=search&otracker1=search&fm=organic&iid=9f358a32-441e-4ad4-bce1-c9fa8048a83d.TSHH3SY9HMAWFFUD.SEARCH&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+                - generic [ref=e1231]:
+                  - generic [ref=e1232]: ₹359
+                  - generic [ref=e1233]: ₹1,199
+                  - generic [ref=e1234]: 70% off
+              - generic [ref=e1237]: Early Bird Deal
+          - generic [ref=e1239]:
+            - link [ref=e1240] [cursor=pointer]:
+              - /url: /st-trends-printed-women-round-neck-maroon-t-shirt/p/itma768a49a1acd2?pid=TSHHMTWY23RSNZ7K&lid=LSTTSHHMTWY23RSNZ7KT3S8YU&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_40&otracker=search&otracker1=search&fm=organic&iid=9f358a32-441e-4ad4-bce1-c9fa8048a83d.TSHHMTWY23RSNZ7K.SEARCH&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - img [ref=e1247]
+            - generic [ref=e1249]:
+              - generic [ref=e1250]: ST Trends
+              - link "Women Printed Round Neck Cotton Blend Maroon T-Shirt" [ref=e1251] [cursor=pointer]:
+                - /url: /st-trends-printed-women-round-neck-maroon-t-shirt/p/itma768a49a1acd2?pid=TSHHMTWY23RSNZ7K&lid=LSTTSHHMTWY23RSNZ7KT3S8YU&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_40&otracker=search&otracker1=search&fm=organic&iid=9f358a32-441e-4ad4-bce1-c9fa8048a83d.TSHHMTWY23RSNZ7K.SEARCH&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+              - link "₹240 ₹599 59% off" [ref=e1252] [cursor=pointer]:
+                - /url: /st-trends-printed-women-round-neck-maroon-t-shirt/p/itma768a49a1acd2?pid=TSHHMTWY23RSNZ7K&lid=LSTTSHHMTWY23RSNZ7KT3S8YU&marketplace=FLIPKART&q=tshirts&store=clo%2Fash%2Fank&srno=s_1_40&otracker=search&otracker1=search&fm=organic&iid=9f358a32-441e-4ad4-bce1-c9fa8048a83d.TSHHMTWY23RSNZ7K.SEARCH&ppt=None&ppn=None&ssid=p0lesolkjk0000001779980320397&qH=ef093de8a644a886&ov_redirect=true
+                - generic [ref=e1253]:
+                  - generic [ref=e1254]: ₹240
+                  - generic [ref=e1255]: ₹599
+                  - generic [ref=e1256]: 59% off
+              - generic [ref=e1259]: Only few left
+        - generic [ref=e1262]:
+          - generic [ref=e1263]: Page 1 of 553
+          - navigation [ref=e1264]:
+            - link "1" [ref=e1265] [cursor=pointer]:
+              - /url: /search?q=tshirts&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off&page=1
+            - link "2" [ref=e1266] [cursor=pointer]:
+              - /url: /search?q=tshirts&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off&page=2
+            - link "3" [ref=e1267] [cursor=pointer]:
+              - /url: /search?q=tshirts&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off&page=3
+            - link "4" [ref=e1268] [cursor=pointer]:
+              - /url: /search?q=tshirts&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off&page=4
+            - link "5" [ref=e1269] [cursor=pointer]:
+              - /url: /search?q=tshirts&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off&page=5
+            - link "6" [ref=e1270] [cursor=pointer]:
+              - /url: /search?q=tshirts&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off&page=6
+            - link "7" [ref=e1271] [cursor=pointer]:
+              - /url: /search?q=tshirts&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off&page=7
+            - link "8" [ref=e1272] [cursor=pointer]:
+              - /url: /search?q=tshirts&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off&page=8
+            - link "9" [ref=e1273] [cursor=pointer]:
+              - /url: /search?q=tshirts&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off&page=9
+            - link "10" [ref=e1274] [cursor=pointer]:
+              - /url: /search?q=tshirts&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off&page=10
+            - link "Next" [ref=e1275] [cursor=pointer]:
+              - /url: /search?q=tshirts&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off&page=2
+        - generic [ref=e1277]:
+          - text: Did you find what you were looking for?
+          - generic [ref=e1278]:
+            - generic [ref=e1279] [cursor=pointer]: "Yes"
+            - generic [ref=e1280] [cursor=pointer]: "No"
+    - generic [ref=e1282]:
+      - generic [ref=e1283]: Reviews for Popular T Shirts
+      - generic [ref=e1284]:
+        - generic [ref=e1285]:
+          - generic [ref=e1287]:
+            - img "KAJARU Self Design Men Zip Neck Pink T-Shirt"
+          - generic [ref=e1288]:
+            - link "1. KAJARU Self Design Men Zip ... 4 62,136 Ratings&1,935 Reviews ₹260 73% off" [ref=e1289] [cursor=pointer]:
+              - /url: /kajaru-self-design-men-zip-neck-pink-t-shirt/p/itm0e28deecca2bc?pid=TSHH8QYHDG2DKSRG&marketplace=FLIPKART&ov_redirect=true
+              - generic [ref=e1291]: 1. KAJARU Self Design Men Zip ...
+              - generic [ref=e1292]:
+                - generic [ref=e1293]:
+                  - text: "4"
+                  - img [ref=e1294]
+                - generic [ref=e1295]:
+                  - text: 62,136 Ratings
+                  - generic [ref=e1296]: "&1,935 Reviews"
+              - generic [ref=e1298]:
+                - generic [ref=e1299]: ₹260
+                - generic [ref=e1300]: 73% off
+            - list [ref=e1301]:
+              - listitem [ref=e1302]: Fabric:Polyester
+              - listitem [ref=e1303]: RegularFit Zip NeckT-shirt
+              - listitem [ref=e1304]: Pattern:Self Design
+        - generic [ref=e1305]:
+          - generic [ref=e1306]: Most Helpful Review
+          - generic [ref=e1308]:
+            - generic [ref=e1309]:
+              - generic [ref=e1310]:
+                - text: "5"
+                - img [ref=e1311]
+              - paragraph [ref=e1312]: Just wow!
+            - generic [ref=e1315]:
+              - generic [ref=e1316]: Hi everyone nd team Flipkart..I m from Kashmir Srinagar first all of I m so thankful to flipkart because this is a good and valuable product I m so happy wit...
+              - generic [ref=e1317] [cursor=pointer]: Read full review
+            - generic [ref=e1319]:
+              - paragraph [ref=e1320]: Raashid Khan
+              - img [ref=e1321]
+              - paragraph [ref=e1325]: Certified Buyer
+              - paragraph [ref=e1326]: 8 months ago
+        - generic [ref=e1327]:
+          - generic [ref=e1328]: Recent Review
+          - generic [ref=e1330]:
+            - generic [ref=e1331]:
+              - generic [ref=e1332]:
+                - text: "4"
+                - img [ref=e1333]
+              - paragraph [ref=e1334]: Very Good
+            - generic [ref=e1337]:
+              - generic [ref=e1338]: Excellent fabric and fitThe quality of this Kajaru t-shirt is impressive. The material is soft, breathable, and looks durable. It fits perfectly and is defin...
+              - generic [ref=e1339] [cursor=pointer]: Read full review
+            - generic [ref=e1341]:
+              - paragraph [ref=e1342]: ABHISHESH YADAV
+              - img [ref=e1343]
+              - paragraph [ref=e1347]: Certified Buyer
+              - paragraph [ref=e1348]: 3 days ago
+      - generic [ref=e1349]:
+        - generic [ref=e1350]:
+          - generic [ref=e1352]:
+            - img "Force Printed Men Round Neck Black T-Shirt"
+          - generic [ref=e1353]:
+            - link "2. Force Printed Men Round Nec... 3.8 19,326 Ratings&836 Reviews ₹228 88% off" [ref=e1354] [cursor=pointer]:
+              - /url: /force-printed-men-round-neck-black-t-shirt/p/itm95a7aee630c49?pid=TSHH3ZNYSRYGYQWD&marketplace=FLIPKART&ov_redirect=true
+              - generic [ref=e1356]: 2. Force Printed Men Round Nec...
+              - generic [ref=e1357]:
+                - generic [ref=e1358]:
+                  - text: "3.8"
+                  - img [ref=e1359]
+                - generic [ref=e1360]:
+                  - text: 19,326 Ratings
+                  - generic [ref=e1361]: "&836 Reviews"
+              - generic [ref=e1363]:
+                - generic [ref=e1364]: ₹228
+                - generic [ref=e1365]: 88% off
+            - list [ref=e1366]:
+              - listitem [ref=e1367]: Fabric:Cotton Blend
+              - listitem [ref=e1368]: OversizedFit Round NeckT-shirt
+              - listitem [ref=e1369]: Pattern:Printed
+        - generic [ref=e1370]:
+          - generic [ref=e1371]: Most Helpful Review
+          - generic [ref=e1373]:
+            - generic [ref=e1374]:
+              - generic [ref=e1375]:
+                - text: "4"
+                - img [ref=e1376]
+              - paragraph [ref=e1377]: Really Nice
+            - generic [ref=e1381]: Nice t shirt quality is good not bad satisfied with that price range
+            - generic [ref=e1383]:
+              - paragraph [ref=e1384]: Sachin Yadav
+              - img [ref=e1385]
+              - paragraph [ref=e1389]: Certified Buyer
+              - paragraph [ref=e1390]: 10 months ago
+        - generic [ref=e1391]:
+          - generic [ref=e1392]: Recent Review
+          - generic [ref=e1394]:
+            - generic [ref=e1395]:
+              - generic [ref=e1396]:
+                - text: "5"
+                - img [ref=e1397]
+              - paragraph [ref=e1398]: Simply awesome
+            - generic [ref=e1402]:
+              - text: Very premium quality product
+              - text: Very stylish and good product
+            - generic [ref=e1404]:
+              - paragraph [ref=e1405]: Sayantan Das
+              - img [ref=e1406]
+              - paragraph [ref=e1410]: Certified Buyer
+              - paragraph [ref=e1411]: 6 days ago
+      - generic [ref=e1412]:
+        - generic [ref=e1413]:
+          - generic [ref=e1415]:
+            - img "TRIPR Solid Men Round Neck Navy Blue, Maroon T-Shirt"
+          - generic [ref=e1416]:
+            - link "3. TRIPR Solid Men Round Neck ... 3.9 57,327 Ratings&5,790 Reviews ₹291 70% off" [ref=e1417] [cursor=pointer]:
+              - /url: /tripr-solid-men-round-neck-navy-blue-maroon-t-shirt/p/itm2b912254bc915?pid=TSHHJD4YK63USKF2&marketplace=FLIPKART&ov_redirect=true
+              - generic [ref=e1419]: 3. TRIPR Solid Men Round Neck ...
+              - generic [ref=e1420]:
+                - generic [ref=e1421]:
+                  - text: "3.9"
+                  - img [ref=e1422]
+                - generic [ref=e1423]:
+                  - text: 57,327 Ratings
+                  - generic [ref=e1424]: "&5,790 Reviews"
+              - generic [ref=e1426]:
+                - generic [ref=e1427]: ₹291
+                - generic [ref=e1428]: 70% off
+            - list [ref=e1429]:
+              - listitem [ref=e1430]: Fabric:Cotton Blend
+              - listitem [ref=e1431]: RegularFit Round NeckT-shirt
+              - listitem [ref=e1432]: Pattern:Solid
+        - generic [ref=e1433]:
+          - generic [ref=e1434]: Most Helpful Review
+          - generic [ref=e1436]:
+            - generic [ref=e1437]:
+              - generic [ref=e1438]:
+                - text: "4"
+                - img [ref=e1439]
+              - paragraph [ref=e1440]: Delightful
+            - generic [ref=e1444]: nice product but low quality
+            - generic [ref=e1446]:
+              - paragraph [ref=e1447]: mohan krishna
+              - img [ref=e1448]
+              - paragraph [ref=e1452]: Certified Buyer
+              - paragraph [ref=e1453]: Feb, 2020
+        - generic [ref=e1454]:
+          - generic [ref=e1455]: Recent Review
+          - generic [ref=e1457]:
+            - generic [ref=e1458]:
+              - generic [ref=e1459]:
+                - text: "1"
+                - img [ref=e1460]
+              - paragraph [ref=e1461]: Not recommended at all
+            - generic [ref=e1465]: Low quality not satisfied
+            - generic [ref=e1467]:
+              - paragraph [ref=e1468]: Pavan kumar naik Ramavath
+              - img [ref=e1469]
+              - paragraph [ref=e1473]: Certified Buyer
+              - paragraph [ref=e1474]: 4 days ago
+      - generic [ref=e1475]:
+        - generic [ref=e1476]:
+          - generic [ref=e1478]:
+            - img "KAJARU Striped Men Round Neck Pink, Dark Green T-Shirt"
+          - generic [ref=e1479]:
+            - link "4. KAJARU Striped Men Round Ne... 3.9 1,56,702 Ratings&7,054 Reviews ₹313 83% off" [ref=e1480] [cursor=pointer]:
+              - /url: /kajaru-striped-men-round-neck-pink-dark-green-t-shirt/p/itm8d68a7c4d9d99?pid=TSHGQHURERWXDF2Y&marketplace=FLIPKART&ov_redirect=true
+              - generic [ref=e1482]: 4. KAJARU Striped Men Round Ne...
+              - generic [ref=e1483]:
+                - generic [ref=e1484]:
+                  - text: "3.9"
+                  - img [ref=e1485]
+                - generic [ref=e1486]:
+                  - text: 1,56,702 Ratings
+                  - generic [ref=e1487]: "&7,054 Reviews"
+              - generic [ref=e1489]:
+                - generic [ref=e1490]: ₹313
+                - generic [ref=e1491]: 83% off
+            - list [ref=e1492]:
+              - listitem [ref=e1493]: Fabric:Polyester
+              - listitem [ref=e1494]: RegularFit Round NeckT-shirt
+              - listitem [ref=e1495]: Pattern:Striped
+        - generic [ref=e1496]:
+          - generic [ref=e1497]: Most Helpful Review
+          - generic [ref=e1499]:
+            - generic [ref=e1500]:
+              - generic [ref=e1501]:
+                - text: "4"
+                - img [ref=e1502]
+              - paragraph [ref=e1503]: Good quality product
+            - generic [ref=e1507]: Best in look and quality 👍
+            - generic [ref=e1509]:
+              - paragraph [ref=e1510]: Suman Gorai
+              - img [ref=e1511]
+              - paragraph [ref=e1515]: Certified Buyer
+              - paragraph [ref=e1516]: May, 2023
+        - generic [ref=e1517]:
+          - generic [ref=e1518]: Recent Review
+          - generic [ref=e1520]:
+            - generic [ref=e1521]:
+              - generic [ref=e1522]:
+                - text: "5"
+                - img [ref=e1523]
+              - paragraph [ref=e1524]: Brilliant
+            - generic [ref=e1528]: Nice 👕 t-shirt
+            - generic [ref=e1530]:
+              - paragraph [ref=e1531]: Rachna Sunny
+              - img [ref=e1532]
+              - paragraph [ref=e1536]: Certified Buyer
+              - paragraph [ref=e1537]: 15 days ago
+      - generic [ref=e1538]:
+        - generic [ref=e1539]:
+          - generic [ref=e1541]:
+            - img "VeBNoR Solid Men Polo Neck Beige T-Shirt"
+          - generic [ref=e1542]:
+            - link "5. VeBNoR Solid Men Polo Neck ... 4.1 28,846 Ratings&1,110 Reviews ₹245 75% off" [ref=e1543] [cursor=pointer]:
+              - /url: /vebnor-solid-men-polo-neck-beige-t-shirt/p/itm68621b608d215?pid=TSHHK6YD933GN85R&marketplace=FLIPKART&ov_redirect=true
+              - generic [ref=e1545]: 5. VeBNoR Solid Men Polo Neck ...
+              - generic [ref=e1546]:
+                - generic [ref=e1547]:
+                  - text: "4.1"
+                  - img [ref=e1548]
+                - generic [ref=e1549]:
+                  - text: 28,846 Ratings
+                  - generic [ref=e1550]: "&1,110 Reviews"
+              - generic [ref=e1552]:
+                - generic [ref=e1553]: ₹245
+                - generic [ref=e1554]: 75% off
+            - list [ref=e1555]:
+              - listitem [ref=e1556]: Fabric:Polyester
+              - listitem [ref=e1557]: RegularFit Polo NeckT-shirt
+              - listitem [ref=e1558]: Pattern:Solid
+        - generic [ref=e1559]:
+          - generic [ref=e1560]: Most Helpful Review
+          - generic [ref=e1562]:
+            - generic [ref=e1563]:
+              - generic [ref=e1564]:
+                - text: "5"
+                - img [ref=e1565]
+              - paragraph [ref=e1566]: Brilliant
+            - generic [ref=e1570]: Wow.. Amazing. TShirt is stretchable and of fine quality. Loved it. 😊.
+            - generic [ref=e1572]:
+              - paragraph [ref=e1573]: VISH K
+              - img [ref=e1574]
+              - paragraph [ref=e1578]: Certified Buyer
+              - paragraph [ref=e1579]: Jan, 2025
+        - generic [ref=e1580]:
+          - generic [ref=e1581]: Recent Review
+          - generic [ref=e1583]:
+            - generic [ref=e1584]:
+              - generic [ref=e1585]:
+                - text: "4"
+                - img [ref=e1586]
+              - paragraph [ref=e1587]: Fair
+            - generic [ref=e1591]: This is the good product and best quality nice looking and stylish 😎
+            - generic [ref=e1593]:
+              - paragraph [ref=e1594]: Amar jeet Maurya
+              - img [ref=e1595]
+              - paragraph [ref=e1599]: Certified Buyer
+              - paragraph [ref=e1600]: 2 days ago
+  - contentinfo [ref=e1601]:
+    - generic [ref=e1603]:
+      - generic [ref=e1604]:
+        - generic [ref=e1605]:
+          - generic [ref=e1606]: ABOUT
+          - link "Contact Us" [ref=e1607] [cursor=pointer]:
+            - /url: /helpcentre?otracker=footer_navlinks
+          - link "About Us" [ref=e1608] [cursor=pointer]:
+            - /url: https://corporate.flipkart.net/corporate-home
+          - link "Careers" [ref=e1609] [cursor=pointer]:
+            - /url: https://www.flipkartcareers.com/?otracker=footer_navlinks
+          - link "Flipkart Stories" [ref=e1610] [cursor=pointer]:
+            - /url: http://stories.flipkart.com/?otracker=footer_navlinks
+          - link "Press" [ref=e1611] [cursor=pointer]:
+            - /url: http://stories.flipkart.com/category/top-stories/news/
+          - link "Corporate Information" [ref=e1612] [cursor=pointer]:
+            - /url: /corporate-information
+        - generic [ref=e1613]:
+          - generic [ref=e1614]: GROUP COMPANIES
+          - link "Myntra" [ref=e1615] [cursor=pointer]:
+            - /url: https://www.myntra.com/
+          - link "Cleartrip" [ref=e1616] [cursor=pointer]:
+            - /url: https://www.cleartrip.com/
+          - link "Shopsy" [ref=e1617] [cursor=pointer]:
+            - /url: https://www.shopsy.in/
+        - generic [ref=e1618]:
+          - generic [ref=e1619]: HELP
+          - link "Payments" [ref=e1620] [cursor=pointer]:
+            - /url: /pages/payments
+          - link "Shipping" [ref=e1621] [cursor=pointer]:
+            - /url: /pages/shipping
+          - link "Cancellation & Returns" [ref=e1622] [cursor=pointer]:
+            - /url: /helpcentre?catalog=55c9c6edb000002e002c1701&view=CATALOG
+          - link "FAQ" [ref=e1623] [cursor=pointer]:
+            - /url: /helpcentre?catalog=55c9c8e2b0000023002c1702&view=CATALOG
+        - generic [ref=e1624]:
+          - generic [ref=e1625]: CONSUMER POLICY
+          - link "Cancellation & Returns" [ref=e1626] [cursor=pointer]:
+            - /url: /pages/returnpolicy?otracker=footer_navlinks
+          - link "Terms Of Use" [ref=e1627] [cursor=pointer]:
+            - /url: /pages/terms?otracker=footer_navlinks
+          - link "Security" [ref=e1628] [cursor=pointer]:
+            - /url: /pages/paymentsecurity?otracker=footer_navlinks
+          - link "Privacy" [ref=e1629] [cursor=pointer]:
+            - /url: /pages/privacypolicy?otracker=footer_navlinks
+          - link "Sitemap" [ref=e1630] [cursor=pointer]:
+            - /url: /sitemap?otracker=footer_navlinks
+          - link "Grievance Redressal" [ref=e1631] [cursor=pointer]:
+            - /url: /pages/grievance-redressal-mechanism?otracker=footer_navlinks
+          - link "EPR Compliance" [ref=e1632] [cursor=pointer]:
+            - /url: /pages/ewaste-compliance-tnc?otracker=footer_navlinks
+          - link "FSSAI Food Safety Connect App" [ref=e1633] [cursor=pointer]:
+            - /url: https://fssai.gov.in/cms/food-safety-connect.php
+        - generic [ref=e1635]:
+          - generic [ref=e1636]: "Mail Us:"
+          - generic [ref=e1639]:
+            - paragraph [ref=e1640]: Flipkart Internet Private Limited,
+            - paragraph [ref=e1641]: Buildings Alyssa, Begonia &
+            - paragraph [ref=e1642]: Clove Embassy Tech Village,
+            - paragraph [ref=e1643]: Outer Ring Road, Devarabeesanahalli Village,
+            - paragraph [ref=e1644]: Bengaluru, 560103,
+            - paragraph [ref=e1645]: Karnataka, India
+          - generic [ref=e1646]: Social
+          - generic [ref=e1647]:
+            - link [ref=e1649] [cursor=pointer]:
+              - /url: https://www.facebook.com/flipkart
+              - img [ref=e1650]
+            - link [ref=e1652] [cursor=pointer]:
+              - /url: https://www.twitter.com/flipkart
+              - img [ref=e1653]
+            - link [ref=e1655] [cursor=pointer]:
+              - /url: https://www.youtube.com/flipkart
+              - img [ref=e1656]
+            - link [ref=e1658] [cursor=pointer]:
+              - /url: https://www.instagram.com/flipkart
+              - img [ref=e1659]
+        - generic [ref=e1661]:
+          - generic [ref=e1662]: "Registered Office Address:"
+          - generic [ref=e1665]:
+            - paragraph [ref=e1666]: Flipkart Internet Private Limited,
+            - paragraph [ref=e1667]: Buildings Alyssa, Begonia &
+            - paragraph [ref=e1668]: Clove Embassy Tech Village,
+            - paragraph [ref=e1669]: Outer Ring Road, Devarabeesanahalli Village,
+            - paragraph [ref=e1670]: Bengaluru, 560103,
+            - paragraph [ref=e1671]: Karnataka, India
+            - paragraph [ref=e1672]: "CIN : U51109KA2012PTC066107"
+            - paragraph [ref=e1673]:
+              - text: "Telephone:"
+              - link "044-45614700" [ref=e1674] [cursor=pointer]:
+                - /url: tel:044-45614700
+              - text: /
+              - link "044-67415800" [ref=e1675] [cursor=pointer]:
+                - /url: tel:044-67415800
+      - generic [ref=e1677]:
+        - generic [ref=e1678]:
+          - img [ref=e1679]
+          - link "Become a Seller" [ref=e1680] [cursor=pointer]:
+            - /url: https://seller.flipkart.com/?utm_source=fkwebsite&utm_medium=websitedirect
+        - generic [ref=e1681]:
+          - img [ref=e1682]
+          - text: Advertise
+        - generic [ref=e1683]:
+          - img [ref=e1684]
+          - link "Gift Cards" [ref=e1685] [cursor=pointer]:
+            - /url: /the-gift-card-store?otracker=footer_navlinks
+        - generic [ref=e1686]:
+          - img [ref=e1687]
+          - link "Help Center" [ref=e1688] [cursor=pointer]:
+            - /url: /helpcentre?otracker=footer_navlinks
+        - generic [ref=e1689]: © 2007-2026 Flipkart.com
+        - img [ref=e1690]
+```
+
+# Test source
+
+```ts
+  1  | import { test,expect, chromium } from '@playwright/test';
+  2  | 
+  3  | // //fixture-golbal variable we have multiple fixtures: page, browser 
+  4  | // test('home', async ({ page }) => {
+  5  | //   await page.goto('https://www.dummyticket.com/')
+  6  | //   await page.waitForTimeout(2000);
+  7  | // await page.goto('https://www.dummyticket.com/dummy-ticket-for-visa-application/')
+  8  | //   await page.goBack()
+  9  | // await page.waitForTimeout(5000);
+  10 | // await page.goForward()
+  11 | //   });
+  12 | test.only('sampletask',async()=> {
+  13 |     const browser=await chromium.launch()
+  14 |     const context=await browser.newContext()
+  15 |     const page=await context.newPage()
+  16 |     await page.goto('https://www.flipkart.com/')
+  17 |     await page.locator('(//div//input[contains(@title,"Search for Products, Brands and More")])[1]').fill('tshirts')
+  18 |     await page.keyboard.press('Enter')
+  19 |     const [products]= await Promise.all([
+> 20 |     page.locator("//div[contains(@class,'lvJbLV')]//div[contains(@class,'p0C73x')]//a[@title]").allTextContents()
+     |                                                                                                 ^ Error: locator.allTextContents: Execution context was destroyed, most likely because of a navigation
+  21 |    
+  22 | ])
+  23 |        page.waitForLoadState()
+  24 |      console.log(products)
+  25 | })
+  26 | 
+```
