@@ -25,7 +25,12 @@ console.log(text1)
 
 
 
+// await page.locator('#rightBtn').click({button:'right'})
+// const text2=await page.locator('#rightStatus').textContent()
+// console.log(text2)
 
+// await page.getByRole('slider').fill(50)
+// await page.waitForTimeout(4000)
 
 
 })
