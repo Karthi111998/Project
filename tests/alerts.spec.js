@@ -48,6 +48,6 @@ test.only('dropdowns',async({page})=>{
    await page.waitForTimeout(5000)
  await page.locator('[data-target="multi-select-dropdown"]').click()
  await page.selectOption('[class="form-multiselect block w-full mt-1"]',[{value:'option2'},{value:'option4'}])
-await page.waitForTimeout(5000)
+
 })
 
