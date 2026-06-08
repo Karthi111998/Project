@@ -1,4 +1,5 @@
 //locators 
+<<<<<<< HEAD
 //#	       id	    input#twotabsearchtextbox /
 //.        class    span.desktop-iconSearch
 //[ ]	attribute	[placeholder="Search"]
@@ -6,6 +7,12 @@
 //browser-chrome,firefox,webkit------inbuild fixtures
 //context- windows---------inbuild fixtures
 //page-tabs------------inbuild fixtures
+=======
+//#	       id	    input#twotabsearchtextbox
+//.        class    span.desktop-iconSearch
+//[ ]	attribute	[placeholder="Search"]
+
+>>>>>>> a7f0490f4a9b6fa660dd1482ede8f513544ce323
 
 /*import { test, expect } from '@playwright/test';*/
 /*test('search' ,async({page})=>{
